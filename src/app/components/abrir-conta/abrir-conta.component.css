@@ -1,0 +1,65 @@
+.corpo-08 {
+   
+}
+
+.corpo-08 .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.corpo-08 .content h2 {
+  /* Estilos do título h2 */
+}
+
+.corpo-08 .content p {
+  /* Estilos do parágrafo p */
+}
+
+.corpo-08 .content .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.corpo-08 .content .buttons .signup-btn {
+  background-color: #6bc33c;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 190px;
+}
+
+.corpo-08 .content .buttons .signup-btn:hover {
+  border: 2px solid #6bc33c;
+  background-color: #fff;
+  color: #6bc33c;
+}
+
+.corpo-08 .content .buttons .alternative {
+  display: flex;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.corpo-08 .content .buttons .alternative p {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  /* Estilos para telas menores que 700px */
+  .corpo-08 .content {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .corpo-08 .content .buttons {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+}
