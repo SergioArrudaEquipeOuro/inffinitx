@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,50 @@ import { PlanoPlatinumComponent } from './pages/plano-platinum/plano-platinum.co
 import { PlataformaComponent } from './pages/plataforma/plataforma.component';
 import { ProdutosComponent } from './pages/produtos/produtos.component';
 import { SuporteComponent } from './pages/suporte/suporte.component';
+import { FormsModule } from '@angular/forms';
+
+
+const routes: Routes = [
+  
+  { path: 'abrirconta', component: AbrirContaComponent },//Teste de component
+  { path: 'carrossel', component: CarrosselComponent },//Teste de component
+  { path: 'enviaremail', component: EnviarEmailComponent },//Teste de component
+  { path: 'footer', component: FooterComponent },//Teste de component
+  { path: 'header', component: HeaderComponent },//Teste de component
+  { path: 'loginn', component: LoginComponent },//Teste de component
+  { path: 'map', component: MapComponent },//Teste de component
+  { path: 'navbar', component: NavBarComponent },//Teste de component
+  { path: 'opinioes', component: OpinioesComponent },//Teste de component
+  { path: 'faq', component: PerguntasFrequentesComponent },//Teste de component
+  { path: 'planos', component: PlanosComponent },//Teste de component
+  { path: 'videos', component: VideoGalleryComponent },//Teste de component
+  { path: 'pix', component: PagamentoPixComponent },//Teste de component
+  { path: 'ted', component: PagamentoTedComponent },//Teste de component
+  { path: 'wallet', component: PagamentoWalletComponent },//Teste de component
+  
+  { path: 'header2', component: HeaderPlanosComponent },//Teste de component
+
+
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'cadastro', component: CadastroComponent },
+  { path: 'contas', component: ContasComponent },
+  { path: 'cursos', component: CursosComponent },
+  { path: 'investir', component: InvestirComponent },
+  { path: 'login', component: LoginUserComponent },
+  { path: 'plataforma', component: PlataformaComponent },
+  { path: 'produtos', component: ProdutosComponent },
+  { path: 'suporte', component: SuporteComponent },
+  { path: 'plano-basic', component: PlanoBasicComponent },
+  { path: 'plano-start', component: PlanoStartComponent },
+  { path: 'plano-premium', component: PlanoPremiumComponent },
+  { path: 'plano-platinum', component: PlanoPlatinumComponent },
+  { path: 'nossos-termos', component: NossosTermosComponent },
+
+
+
+]
+
 
 @NgModule({
   declarations: [
@@ -73,7 +118,9 @@ import { SuporteComponent } from './pages/suporte/suporte.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

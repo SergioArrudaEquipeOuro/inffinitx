@@ -1,0 +1,18 @@
+.corpo-01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 400px;
+    background-image: url(../../../assets/media/paisagem-3.svg);
+    background-size: cover;
+    background-position: center center;
+    margin-top: -60px;
+}
+
+.corpo-01 h1 {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}

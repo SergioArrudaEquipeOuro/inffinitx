@@ -1,0 +1,97 @@
+#logo{
+    height: 25px;
+    cursor: pointer;
+    padding: 0 20px;
+  }
+  
+  .submenu {
+      display: none;
+      position: absolute;
+      top: 45px; /* Posiciona o submenu abaixo do nav-link */
+      z-index: 999; /* Define uma ordem de sobreposição alta para o submenu */
+      background-color: #e8e8e8;
+      border-radius: 15px;
+      padding: 20px;
+      min-width: 250px;
+    }
+    .navbar-nav{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      
+      
+    }
+    .nav-item:hover .submenu {
+      display: block; /* Exibe o submenu quando o nav-item for hover */
+    }
+    a{
+      cursor: pointer;
+    }
+    .navbar-brand {
+      margin: 0 20px;
+    }
+    
+    .navbar {
+      position: relative; /* Adiciona uma posição relativa ao navbar */
+      
+    }
+   
+    
+    ul,
+    li {
+      list-style: none;
+      
+    }
+    
+    a {
+      text-decoration: none;
+      font-weight: bolder;
+      padding: 10px 0;
+    }
+    
+    .submenu li {
+      margin: 15px 0;
+    }
+    
+    .submenu li a:hover {
+      color: #000000;
+    }
+    
+    .btn-cadastrar {
+      background-color: #6bc33c;
+      color: white;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      padding: 7px 25px;
+      margin: 0 30px;
+      transition: 0.5s;
+      width: 150px;
+    }
+    
+    .btn-cadastrar:hover {
+      background-color: #fff;
+      color: #6bc33c;
+      border: 1px solid #6bc33c;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .btn-cadastrar {
+        display: none;
+      }
+      .submenu{
+          right: 0;
+          margin: 10px ;
+          max-width: 50%;
+      }
+      .nav-link{
+          padding: 0 15px;
+          margin: 20px 0;
+          max-width: 49%;
+          
+      }
+      .navbar-toggler{
+          margin: 0 10px;
+      }
+    }
+   

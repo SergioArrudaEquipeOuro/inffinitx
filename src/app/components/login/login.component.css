@@ -1,0 +1,132 @@
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .password-input {
+    position: relative;
+  }
+  
+  .password-input input[type="password"] {
+    padding-right: 30px;
+  }
+  
+  .password-input i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .form-options {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-options{
+    margin: 15px 0;
+  }
+  .form-options a {
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+    
+  }
+
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .password-toggle i {
+    font-size: 18px;
+    color: #999;
+  }
+  
+.texto{
+  margin: 25px 0;
+}
+
+
+.leiaut{
+    background: #ffffff;
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgb(175, 175, 175);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu-login{
+    height: 100vh;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.title h1{
+    color: rgb(39, 39, 109);
+    font-weight: bolder;
+}
+
+.login-form .password-input {
+    position: relative;
+}
+  
+.login-form .password-input input[type="password"] {
+    padding-right: 30px;
+}
+  
+.login-form .password-toggle {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+  
+.login-form .password-toggle i {
+    font-size: 25px;
+    color: #999;
+}
