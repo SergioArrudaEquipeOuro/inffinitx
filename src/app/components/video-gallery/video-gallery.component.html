@@ -1,1 +1,68 @@
-<p>video-gallery works!</p>
+<div class="leiaut-menu">
+    <div class="menu">
+      
+      <ul>
+        <span class="icon-container">
+          <i class="fas fa-play-circle icon-video"></i>
+          <h3>Módulos</h3>
+        </span>
+        
+        <li (click)="toggleSubMenu('module1')" [class.active]="selectedModule === 'module1'" class="modulos">Módulo 01</li>
+          <ul *ngIf="isSubMenuOpen('module1')">
+            <li *ngFor="let lesson of module1Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+          </ul>
+        <li (click)="toggleSubMenu('module2')" [class.active]="selectedModule === 'module2'" class="modulos">Módulo 02</li>
+        <ul *ngIf="isSubMenuOpen('module2')">
+          <li *ngFor="let lesson of module2Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+        </ul>
+        
+        <li (click)="toggleSubMenu('module3')" [class.active]="selectedModule === 'module3'" class="modulos">Módulo 03</li>
+        <ul *ngIf="isSubMenuOpen('module3')">
+          <li *ngFor="let lesson of module3Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+        </ul>
+  
+        <li (click)="toggleSubMenu('module4')" [class.active]="selectedModule === 'module4'" class="modulos">Módulo 04</li>
+        <ul *ngIf="isSubMenuOpen('module4')">
+          <li *ngFor="let lesson of module4Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+        </ul>
+  
+        <li (click)="toggleSubMenu('module5')" [class.active]="selectedModule === 'module5'" class="modulos">Módulo 05</li>
+        <ul *ngIf="isSubMenuOpen('module5')">
+          <li *ngFor="let lesson of module5Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+        </ul>
+  
+        <li (click)="toggleSubMenu('module6')" [class.active]="selectedModule === 'module6'" class="modulos">Módulo 06</li>
+        <ul *ngIf="isSubMenuOpen('module6')">
+          <li *ngFor="let lesson of module6Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+        </ul>
+  
+        <li (click)="toggleSubMenu('module7')" [class.active]="selectedModule === 'module7'" class="modulos">Módulo 07</li>
+        <ul *ngIf="isSubMenuOpen('module7')">
+          <li *ngFor="let lesson of module7Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+        </ul>
+  
+        <li (click)="toggleSubMenu('module8')" [class.active]="selectedModule === 'module8'" class="modulos">Módulo 08</li>
+        <ul *ngIf="isSubMenuOpen('module8')">
+          <li *ngFor="let lesson of module8Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+        </ul>
+  
+        <li (click)="toggleSubMenu('module9')" [class.active]="selectedModule === 'module9'" class="modulos">Módulo 09</li>
+        <ul *ngIf="isSubMenuOpen('module9')">
+          <li *ngFor="let lesson of module9Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+        </ul>
+  
+        <li (click)="toggleSubMenu('module10')" [class.active]="selectedModule === 'module10'" class="modulos">Módulo 10</li>
+        <ul *ngIf="isSubMenuOpen('module10')">
+          <li *ngFor="let lesson of module10Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+        </ul>
+  
+      </ul>
+    </div>
+    
+    <div *ngIf="isVideoOpen && selectedLesson" id="video-container">
+      <iframe [src]="getSafeUrl(selectedLesson.videoUrl)" id="video" frameborder="0" allowfullscreen ></iframe>
+      <button *ngIf="selectedLesson && isVideoOpen" class="close-button-video" (click)="closeVideo()" >Fechar Vídeo</button>
+    </div>
+  </div>
+  
+  

@@ -1,1 +1,17 @@
-<p>perguntas-frequentes works!</p>
+<div class="leiaut-map">
+    <div class="title">
+      <h2>Perguntas frequentes:</h2>
+    </div>
+    <div *ngFor="let pergunta of perguntas" class="container" (click)="expandir(pergunta)">
+      <div class="title">
+        <h3>{{pergunta.title}}</h3>
+        <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
+      </div>
+      <div class="content" [ngClass]="pergunta.cuboClass" #contentRef>
+        {{ pergunta.texto }}<br>
+       
+        
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,257 @@
+.art-3d{
+    width: 100%;
+    height: 300px;
+    background: blue;
+    margin: 100px 0 ;
+    display: flex;
+    justify-content: center;
+   
+  }
+  .art-3d img{
+    position: absolute;
+    top: 50px;
+    
+  }
+  
+  
+  
+  
+  
+  .btn-toggle {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .btn-toggle .title h2 {
+      font-weight: bolder;
+      padding: 0 20px;
+    }
+    
+    .plans-container {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .toggle-button {
+      position: relative;
+      padding: 20px 50px;
+      border: none;
+      border-radius: 20px;
+      background-color: blue;
+      color: #333;
+      cursor: pointer;
+    }
+    
+    .toggle-button .toggle-indicator {
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      transform: translate(0, -50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #314ba1;
+      transition: left 0.3s ease;
+    }
+    
+    .toggle-button.active .toggle-indicator {
+      left: calc(100% - 45%);
+    }
+    
+    .plans-list {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .plan {
+      min-width: 250px;
+      padding: 20px;
+      margin: 10px;
+      border: 2px solid #ccc;
+      border-radius: 15px;
+      text-align: left;
+      transition: 0.5s;
+    }
+    /* Mudança de cor dos planos */
+  
+  
+    /* .plan:hover{
+      background: #2b2b2b;
+    }
+    .plan:hover .robos{
+      background: #ffffff;
+      
+    }
+  
+    .plan:hover .title h3,
+    .plan:hover .preco p,
+    .plan:hover .beneficios li{
+  
+      color: #ffffff;
+  
+    } */
+  
+  
+    /* FIM ----- */
+    
+    .plan h3 {
+      font-size: 20px;
+    }
+    
+    .plan p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .plan ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .plan ul li {
+      margin-bottom: 5px;
+    }
+    
+    .verificar {
+      color: rgb(41, 189, 49);
+      font-size: 20px;
+      padding: 10px;
+    }
+    .neutro{
+      font-size: 20px;
+      padding: 10px;
+    }
+    .nao-verificar {
+      color: rgb(240, 0, 0);
+      font-size: 20px;
+      padding: 10px;
+      
+    }
+    
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 30px;
+      align-items: center;
+    }
+    
+    .title h3 {
+      font-size: 25px;
+      font-weight: bolder;
+    }
+    
+    .preco {
+      display: flex;
+      align-items: center;
+    }
+    
+    .preco p {
+      margin: 5px;
+    }
+    
+    .preco .value {
+      font-size: 30px;
+      font-weight: bolder;
+    }
+    
+    .btn-plano {
+      width: 100%;
+      align-items: center;
+      margin: 10px 0 30px 0;
+    }
+    
+    .btn {
+      border-radius: 30px;
+    }
+    .robos{
+      
+      bottom: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .plan{
+        padding: 15px;
+      }
+      .plans-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .btn-toggle {
+        width: 100%;
+        margin: 0;
+      }
+    
+      .plans-container {
+        width: 100%;
+      }
+    
+      .toggle-button {
+        position: relative;
+        padding: 10px 23px;
+        border: none;
+        border-radius: 5px;
+        background-color: #bdbdbd;
+        color: #333;
+        cursor: pointer;
+      }
+    
+      .toggle-button .toggle-indicator {
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #314ba1;
+        transition: left 0.3s ease;
+      }
+    
+      .toggle-button.active .toggle-indicator {
+        left: calc(100% - 10%);
+      }
+    
+      .btn-toggle .title h2 {
+        font-weight: bolder;
+        padding: 0 10px;
+      }
+      .plans-container{
+        padding: 0;
+      }
+      .header{
+        padding: 5px;
+      }
+    }
+    
+    .header .icon{
+      width: 200px;
+      height: 200px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 50px;
+  }
+  
+  .icon1{
+    background-image: url('../../../assets/media/BASIC.png');
+  }
+  .icon2{
+    background-image: url('../../../assets/media/START.png');
+  }
+  .icon3{
+    background-image: url('../../../assets/media/PREMIUM.png');
+  }
+  .icon4{
+    background-image: url('../../../assets/media/PLATINUM.png');
+  }

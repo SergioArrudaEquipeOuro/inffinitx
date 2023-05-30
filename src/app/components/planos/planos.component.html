@@ -1,1 +1,260 @@
-<p>planos works!</p>
+<div class="art-3d">
+    <img src="../../../assets/media/art-3d.png" alt="">
+</div>
+<div class="plans-container">
+    
+    <!-- <div class="btn-toggle">
+        <div class="title">
+            <h2>Báscico</h2>
+        </div>
+        <button class="toggle-button" [class.active]="buttonState" (click)="toggleButton()">
+          <span class="toggle-indicator"></span>
+        </button>
+        <div class="title">
+            <h2>Avançados</h2>
+        </div>
+    </div> -->
+    <div class="plans-list">
+      <div *ngIf="!buttonState" class="plan">
+        <div class="header">
+            <div class="icon icon1"> </div>
+            <div class="title">
+                <h3>PLANO BASIC</h3>
+            </div>
+            <div class="preco">
+                <p>de</p>
+                <p class="value">U$100,00</p>
+            </div>
+        </div>
+        <div class="btn-plano">
+            <button class="btn" routerLink="/plano-basic">Aderir plano</button>
+        </div>
+        <div class="beneficios">
+            <ul>
+                <li><i class="fa fa-check verificar" aria-hidden="true"></i>Curso Básicos</li>
+                <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Curso avançado</li>
+                <li><i class="fa fa-check verificar" aria-hidden="true"></i> Mentoria</li>
+                <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Biblioteca de cursos</li>
+                <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Sala de sinais</li>
+                <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Acompanhamento diário</li>
+                <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Grupo de negociações</li>
+                <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Prioridade de atendimento</li>
+                <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Prioridade de suporte</li>
+                <li><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento</li>
+                <li><i class="fa fa-check verificar" aria-hidden="true"></i>Atendimento em até <strong>48h</strong></li>
+                <li><i class="fa fa-check verificar" aria-hidden="true"></i> SALDO REVERTIDO PARA OPERAÇÕES!</li>
+                <li><strong>Licença de negociações (01 Bots)</strong></li>
+                    <div class="robos">
+                        <i class="fas fa-robot verificar"></i>
+                        <i class="fas fa-robot neutro"></i>
+                        <i class="fas fa-robot neutro"></i>
+                        <i class="fas fa-robot neutro"></i>
+                        <i class="fas fa-robot neutro"></i>
+                    </div>
+              </ul>
+        </div>
+      </div>
+      <div class="plans-list">
+        <div *ngIf="!buttonState" class="plan">
+          <div class="header">
+            <div class="icon icon2"> </div>
+              <div class="title">
+                  <h3>PLANO START</h3>
+              </div>
+              <div class="preco">
+                  <p>de</p>
+                  <p class="value">U$ 250,00</p>
+              </div>
+          </div>
+          <div class="btn-plano">
+              <button class="btn" routerLink="/plano-start">Aderir plano</button>
+          </div>
+          <div class="beneficios">
+              <ul>
+                <li><i class="fa fa-check verificar" aria-hidden="true"></i>Curso Básico</li>
+                  <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Curso avançado</li>
+                  <li><i class="fa fa-check verificar" aria-hidden="true"></i> Mentoria</li>
+                  <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Biblioteca de cursos</li>
+                  <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Sala de sinais</li>
+                  <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Acompanhamento diário</li>
+                  <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Grupo de negociações</li>
+                  <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Prioridade de atendimento</li>
+                  <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Prioridade de suporte</li>
+                  <li><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento semanal</li>
+                  <li><i class="fa fa-check verificar" aria-hidden="true"></i>Atendimento em até <strong>24h</strong></li>
+                  <li><i class="fa fa-check verificar" aria-hidden="true"></i> SALDO REVERTIDO PARA OPERAÇÕES!</li>
+                  <li><strong>Licença de negociações (01 Bots)</strong></li>
+                    <div class="robos">
+                        <i class="fas fa-robot verificar"></i>
+                        <i class="fas fa-robot neutro"></i>
+                        <i class="fas fa-robot neutro"></i>
+                        <i class="fas fa-robot neutro"></i>
+                        <i class="fas fa-robot neutro"></i>
+                    </div>
+                </ul>
+          </div>
+        </div>
+        <div class="plans-list">
+            <div *ngIf="!buttonState" class="plan">
+                <div class="header">
+                    <div class="icon icon3"> </div>
+                    <div class="title">
+                        <h3>PREMIUM</h3>
+                    </div>
+                    <div class="preco">
+                        <p>de</p>
+                        <p class="value">U$500,00</p>
+                    </div>
+                </div>
+                <div class="btn-plano">
+                    <button class="btn">Aderir plano</button>
+                </div>
+            <div class="beneficios">
+                <ul>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Curso Básico</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Curso avançado</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i> Mentoria</li>
+                    <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Biblioteca de cursos</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Sala de sinais</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento diário</li>
+                    <li><i class="fa fa-times nao-verificar" aria-hidden="true"></i>Grupo de negociações</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Prioridade de atendimento</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Prioridade de suporte</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento semanal</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Atendimento em até <strong>24h</strong></li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i> SALDO REVERTIDO PARA OPERAÇÕES!</li>
+                    <li><strong>Licença de negociações (02 Bots)</strong></li>
+                    <div class="robos">
+                        <i class="fas fa-robot verificar"></i>
+                        <i class="fas fa-robot verificar"></i>
+                        <i class="fas fa-robot neutro"></i>
+                        <i class="fas fa-robot neutro"></i>
+                        <i class="fas fa-robot neutro"></i>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="plans-list">
+            <div *ngIf="!buttonState" class="plan">
+                <div class="header">
+                    <div class="icon icon4"></div>
+                    <div class="title">
+                        <h3>PLATINUM</h3>
+                    </div>
+                    <div class="preco">
+                        <p>de</p>
+                        <p class="value">U$1.000,00</p>
+                    </div>
+                </div>
+                <div class="btn-plano">
+                    <button class="btn">Aderir plano</button>
+                </div>
+            <div class="beneficios">
+                <ul>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Curso Básico</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Curso avançado</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i> Mentoria</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Biblioteca de cursos</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Sala de sinais</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento diário</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Grupo de negociações</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Prioridade de atendimento</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Prioridade de suporte</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento semanal</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Atendimento em até <strong>12h</strong></li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i> SALDO REVERTIDO PARA OPERAÇÕES!</li>
+                    <li><strong>Licença de negociações (05 Bots)</strong></li>
+                    <div class="robos">
+                        <i class="fas fa-robot verificar"></i>
+                        <i class="fas fa-robot verificar"></i>
+                        <i class="fas fa-robot verificar"></i>
+                        <i class="fas fa-robot verificar"></i>
+                        <i class="fas fa-robot verificar"></i>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="plans-list">
+            <div *ngIf="buttonState" class="plan">
+                <div class="header">
+                    <div class="icon icon3"> </div>
+                    <div class="title">
+                        <h3>PLANO PREMIUM</h3>
+                    </div>
+                    <div class="preco">
+                        <p>de</p>
+                        <p class="value">U$500,00</p>
+                    </div>
+                </div>
+                <div class="btn-plano">
+                    <button class="btn" routerLink="/plano-premium">Aderir plano</button>
+                </div>
+            <div class="beneficios">
+                <ul>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Curso avançado</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i> Mentoria</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Sala de sinais</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento diário agendado</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Licença de negociações  (02 bot)</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Prazo para atendimento em até 24h</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i> SALDO REVERTIDO PARA OPERAÇÕES!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="plans-list">
+            <div *ngIf="buttonState" class="plan">
+                <div class="header">
+                    <div class="icon icon4"></div>
+                    <div class="title">
+                        <h3>PLANO PLATINUM</h3>
+                    </div>
+                    <div class="preco">
+                        <p>de</p>
+                        <p class="value">U$1.000,00</p>
+                    </div>
+                </div>
+                <div class="btn-plano">
+                    <button class="btn" routerLink="/plano-platinum">Aderir plano</button>
+                </div>
+            <div class="beneficios">
+                <ul>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Biblioteca de cursos</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Curso avançado</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Sala de sinais</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Mentoria</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento diário  (analista sênior)</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Prioridade de atendimento e suporte</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Grupo de negociações exclusivo</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i> Licença de negociações  (até 05 bots)</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Prazo para atendimento em até 12h</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>SALDO REVERTIDO PARA OPERAÇÕES!</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="plans-list">
+            <div *ngIf="buttonState" class="plan">
+                <div class="header">
+                    <div class="title">
+                        <h3>VIP</h3>
+                    </div>
+                    <div class="preco">
+                        <p>de</p>
+                        <p class="value">$10,000,000</p>
+                    </div>
+                </div>
+                <div class="btn-plano">
+                    <button class="btn">Cadastre-se</button>
+                </div>
+            <div class="beneficios">
+                <ul>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Instrumentos personalizados</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Sem custos adicionais</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Condições islâmicas</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Alavancagem 1:400</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Análise ampla</li>
+                    <li><i class="fa fa-check verificar" aria-hidden="true"></i>Execução rápida</li>
+                </ul>
+            </div>
+        </div> -->
+    </div>
+  

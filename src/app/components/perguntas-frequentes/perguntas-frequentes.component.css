@@ -1,0 +1,61 @@
+.leiaut-map{
+    margin: 30px 0;
+  }
+  .leiaut-map .title{
+    padding-left: 50px;
+  }
+  .leiaut-map .title h2{
+    color: #292929;
+    font-weight: bolder;
+  }
+  .container {
+      background: #d4d4d4;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 0 15px 20px 15px;
+      border-left: 8px solid rgb(35, 51, 139);
+      
+    }
+    .container .title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    /* .icon{
+      float: right;
+      
+    } */
+    .container h3 {
+      color: #3d3d3d;
+      cursor: pointer;
+      padding: 10px;
+      margin: 0;
+      font-weight: bolder;
+    }
+    
+    .close {
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.5s ease;
+      overflow: hidden;
+    }
+    
+    .open {
+      max-height: 500px; /* Ajuste a altura máxima conforme necessário */
+      opacity: 1;
+      transition: max-height 0.5s ease;
+      padding: 15px;
+    }
+    
+    .content {
+      background: #f3f3f3;
+      border-radius: 10px;
+      color: #292929;
+    }
+  
+    

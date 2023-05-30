@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class PlanosComponent {
 
+  buttonState = false;
+
+  toggleButton() {
+    this.buttonState = !this.buttonState;
+  }
+  
+
 }
