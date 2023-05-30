@@ -1,0 +1,97 @@
+.pagamento{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    
+  }
+  .pix{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    width: 500px;
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    
+  }
+  .title h2{
+    color: rgb(44, 44, 44);
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  .icon-pix{
+    color: #49B2A4;
+    margin-right: 15px;
+  }
+  
+  .bloco-02{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  :host {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .close{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .btn-close{
+    background: rgb(93, 194, 93);
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    margin-right: 50px;
+  }
+  .icon-close{
+    color: #ffff;
+    
+  }
+  
+  input{
+    border-radius: 10px;
+    width: 300px;
+    padding: 3px 5px;
+    margin: 5px 0;
+    background: #e6e6e6;
+    border: none;
+    
+  }
+  select{
+    border-radius: 10px;
+    height: 30px;
+    padding-left: 15px;
+    margin-left:15px ;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  .btn{
+    margin: 15px 0;
+  }

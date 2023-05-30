@@ -1,0 +1,120 @@
+.corpo-01{
+    
+
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.texto, .title{
+    width: 60%;
+    font-weight: bolder;
+    color: rgb(29, 29, 95);
+}
+
+.texto p {
+    font-size: 15px;
+}
+.title h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
+.corpo-02{
+    
+
+    padding: 20px 0;
+    display: flex;
+
+}
+
+.c2b1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.c2b2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+.c2b2 .texto, .c2b1 .texto {
+    margin: 10px 0;
+}
+.c2b2 button{
+    background-color: #6bc33c;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 7px 25px;
+    margin: 30px;
+    transition: 0.5s;
+    max-width: 50%;
+}
+.c2b2 button:hover{
+    background-color: #fff;
+    color: #6bc33c;
+    border: 1px solid #6bc33c;
+}
+
+
+
+
+.corpo-03{
+    background-color: rgb(38, 42, 61);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.corpo-03 h2, .corpo-03 p{
+    color: #fff;
+    font-weight: lighter;
+}
+.btn{
+    background-color: #6bc33c;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 7px 25px;
+    margin: 30px;
+    transition: 0.5s;
+    max-width: 50%;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #6bc33c;
+    border: 1px solid #6bc33c;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    .corpo-02, .c2b2,.c2b1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+}

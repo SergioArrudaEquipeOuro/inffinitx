@@ -1,0 +1,672 @@
+/* CARROSSEL -----------------------------------------------------------------*/
+
+#myCarousel {
+    max-height: 100vh;
+    margin-bottom: 40px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #707b8e;
+  }
+  
+  
+  .btn-carrossel{
+    margin-top: .400px;
+  }
+  
+/* CORPO 02 */
+.corpo-02 {
+  display: flex;
+  position: relative;
+  background-color: white;
+  min-height: 700px;
+  
+}
+
+.b1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.b1 .img {
+  width: 120px;
+  height: 120px;
+  background-color: gray;
+  color: #fff;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.b1 .img img {
+  height: 50px;
+  width: 50px;
+}
+
+.b1 .img h5 {
+  font-size: 12px;
+  color: #fff;
+}
+
+.b2 {
+  width: 60%;
+  background-color: #fff;
+  color: #707b8e;
+  padding: 30px;
+}
+
+.b2 h2 {
+  margin: 50px 0;
+}
+
+.b2 .sub {
+  margin-bottom: 30px;
+}
+
+.b2 ul {
+  margin: 0;
+  padding: 0;
+  margin: 10px 0 10px 50px;
+  list-style-type: disc;
+}
+
+.b2 li {
+  margin-bottom: 10px;
+}
+
+.b2 button {
+  background-color: #fff;
+  color: #4f9be6;
+  border-radius: 25px;
+  border: 2px solid #4f9be6;
+  cursor: pointer;
+  height: 50px;
+  width: 190px;
+  margin-top: 30px;
+}
+
+.b2 button:hover {
+  background-color: #4f9be6;
+  color: #fff;
+  border: none;
+}
+
+
+/* CORPO 03 */
+
+
+.corpo-03 {
+  display: flex;
+  height: 100vh;
+  padding: 30px;
+  
+}
+
+.c3b1 {
+  
+  max-width: 100%;
+  display: flex;
+
+}
+
+.c3b1-texto {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.c3b1-texto h2 {
+  /* margin-bottom: 10px; */
+}
+
+.c3b1-texto .destaque {
+  color: #3c66ef;
+}
+
+.c3b1-texto a {
+  color: #3c66ef;
+  
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.c3b1-texto a:hover {
+  color: #ffffff;
+  background-color: #3c66ef;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bolder;
+  
+}
+
+
+
+
+
+  
+ /* CORPO 04 */
+
+.corpo-04 {
+  
+  
+  display: flex;
+  overflow: hidden;
+}
+
+.c4b1 {
+  max-width: 50%;
+}
+
+.c4b1-imagem {
+  max-width: 100%;
+  height: auto;
+}
+
+.c4b2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+  width: 50%;
+}
+
+.c4b3-botao {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-teste {
+  background-color: #2d4cb1;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 190px;
+}
+
+.btn-teste:hover {
+  border: 2px solid #2d4cb1;
+  background-color: #6e84ff;
+  
+}
+
+  
+ /* CORPO 05 */
+
+.corpo-05 {
+  max-height: 100%;
+  width: 100%;
+  background-color: #4f9be6;
+  margin: 50px 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  justify-content: space-around;
+}
+
+.c5b1 h2 , span{
+  color: white;
+}
+
+.c5b2 {
+  color: white;
+}
+
+.corpo-05 button {
+  background-color: #4f9be6;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 300px;
+  margin-top: 30px;
+  border:2px solid #fff;
+}
+
+.corpo-05 button:hover {
+  background-color: #fff;
+  color: #4f9be6;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 300px;
+  margin-top: 30px;
+}
+
+  
+  /* CORPO 06 -----------------------------------------------------------------*/
+  
+  .corpo-06{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+  .c6b2{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  
+  .c6b2 button{
+    background-color: #003464;
+    color: #ffff;
+    border-radius: 25px;
+    border: 1px solid white;
+    cursor: pointer;
+    height: 50px;
+    width: 300px;
+    margin-top: 30px;
+  }
+  .c6b2 button:hover{
+    background-color: #fff;
+    color: #092138;
+    border-radius: 25px;
+    border: 1px solid #092138;
+    cursor: pointer;
+    height: 50px;
+    width: 300px;
+    margin-top: 30px;
+  }
+  
+  /* CORPO 07 -----------------------------------------------------------------*/
+  
+  
+  .corpo-07{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    min-height: 500px;
+  }
+  
+  .c7b1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    margin: 50px 0;
+  }
+  
+  .container-info{
+    min-height: 300px;
+    min-width: 200px;
+    padding: 15px;
+    margin: 30px 5px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+  }
+  .container-info:hover {
+    background-color: #003464;
+    
+  }
+.container-info:hover p,
+.container-info:hover h4 {
+  color: white;
+}
+  
+  .texto h2{
+    margin-bottom: 20px;
+    
+  }
+  
+  .c7b2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+  }
+  
+  .container-b1 p,
+  .container-b2 h4 {
+    color: #292732  ;
+  }
+  
+  
+  /* CORPO 08 -----------------------------------------------------------------*/
+  
+  .corpo-08{
+    
+  }
+  .c8b1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  
+    
+  }
+  
+  .c8b1-btn-texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0;
+  }
+  .c8b1--texto{
+    display: flex;
+    margin-left: 15px;
+    padding-top: 15px;
+  }
+  .c8b1--texto p{
+    margin-right: 5px;
+  }
+  
+  .c8b1-btn-texto button{
+    background-color: #6bc33c;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 190px;
+    
+  }
+  .c8b1-btn-texto button:hover{
+    border: 2px solid #6bc33c;
+    background-color: #ffff;
+    color: #6bc33c;
+    
+  }
+  
+  
+  /* CORPO 09 -----------------------------------------------------------------*/
+  
+  
+  #face, #twitter{
+    cursor: pointer;
+    margin: 5px;
+    
+  }
+  
+  .corpo-09{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #eaeaea;
+    padding: 50px;
+  }
+  
+  .c9b1,
+  .c9b2,
+  .c9b3{
+    min-height: 400px;
+    width: 300px;
+  
+    
+  }
+  
+  .c9b2{
+    width: 100%;
+    padding: 15px;
+  }
+  .c9b2-texto p{
+    margin: 20px 0;
+  }
+  
+  .c9b3-texto-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+  .c9b3-texto-links a{
+   font-size: 15px;
+  }
+
+
+  @media screen and (max-width: 700px) {
+   
+  
+    /* Estilos para os slides */
+    .carousel-indicators {
+      display: none;
+    }
+  
+    .carousel-inner {
+      height: auto;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Estilos para os blocos de imagem */
+    .corpo-02 .b1 .img,
+    .corpo-02 .b2 {
+      width: 100%;
+    }
+  
+     /* Estilos para o conteúdo corpo-02 */
+    .corpo-02{
+      width: 100%;
+      flex-direction: column;
+      
+    }
+    .b1{
+      
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      
+    }
+    .img{
+      max-width: 100px;
+      max-height: 100px;    
+      border-radius: 45px;
+      flex-wrap: nowrap;
+  
+      
+    }
+    .img img{
+      height: 50px;
+      width: 50px;
+      
+    }
+  
+    /* Estilos para o conteúdo corpo-03 */
+    .corpo-03{
+      
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      height: auto;
+      padding: 30px 0;
+    }
+    .c3b1{
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    .c3b1-texto{
+      padding: 10px;
+      margin: 0;
+      max-width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .c3b1-h2,
+    .c3b1-span,
+    .destaque{
+      margin: 20px 0;
+      color: #707b8e;
+    }
+    .c3b1{
+
+    }
+    .c3b2{
+      display: none;
+    }
+        
+  
+    /* Estilos para o conteúdo corpo-04 */
+    .corpo-04{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      width: 100%;
+      align-items: center;
+      
+    }
+    .c4b1{
+      width: 100%;
+      background-color: red;
+    }
+    .c4b1 img{
+      height: 100%;
+      object-fit: cover;
+    }
+    .corpo-04 .c4b1,
+    .corpo-04 .c4b2 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .c4b3-botao{
+      flex-direction: row;
+    }
+    .c4b3-botao button{
+      height: 40px;
+      width: 45%;
+      
+    }
+    .btn-teste{
+      margin: 20px 10px;
+      background: #003464;
+    }
+  
+    /* Estilos para o conteúdo corpo-05 */
+    .corpo-05{
+      margin-top: 0px;
+    }
+    .corpo-05 .c5b1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Estilos para o conteúdo corpo-06 */
+    .corpo-06 .c6b1,
+    .corpo-06 .c6b2 {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .c6b1 span{
+      color: #636363;
+      
+    }
+    .corpo-06{
+      padding: 0 10px;
+      max-width: 100%;
+    }
+  
+    .corpo-06 img {
+      max-width: 100%;
+      height: auto;
+      margin: 30px 0;
+    }
+  
+    /* Estilos para o conteúdo corpo-07 */
+    .corpo-07{
+      margin: 100px 0;
+    }
+    .c7b1{
+      align-items: center;
+      padding: 10px;
+      
+    }
+    .c7b1 .texto{
+      margin: 10px;
+    }
+    .c7b2{
+      align-items: center;
+    }
+    .corpo-07 .c7b1,
+    .corpo-07 .c7b2 {
+      width: 100%;
+    }
+    .c7b2{
+      flex-direction: column;
+    }
+  
+    /* Estilos para o conteúdo corpo-08 */
+    
+    .corpo-08 .c8b1 {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    .c8b1{
+      margin: 0;
+    }
+    .c8b1-btn-texto{
+      flex-direction: column;
+      margin: 30px 0;
+    }
+  
+    /* Estilos para o rodapé */
+    .corpo-09 .c9b1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .corpo-09{
+      min-height: 200px;
+      
+      margin: 0;
+      min-height: 500px;
+      flex-direction: column;
+    }
+    .c9b2{
+      max-width: 100%;
+    }
+    .c9b2-texto{
+      max-width: 90%;
+      
+    }
+  
+  
+  
+  }

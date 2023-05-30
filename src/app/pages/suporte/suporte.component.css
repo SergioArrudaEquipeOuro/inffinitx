@@ -1,0 +1,62 @@
+.corpo-01{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+.info{
+    background: rgb(255, 255, 255);
+
+    min-height: 100px;
+    max-height: 400px;
+    min-width: 100px;
+    max-width: 400px;
+    padding: 20px;
+
+}
+.title h3{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.icon{
+    font-size: 30px ;
+    color: rgb(87, 87, 202);
+    margin: 20px;
+}
+
+.corpo-02{
+    
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 0;
+}
+.email{
+    width: 50%;
+}
+.texto p{
+    margin: 0;
+}
+.map{
+    background-color: #545385;
+    border-radius: 0px;
+    padding: 30px 150px;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .corpo-01{
+        flex-direction: column;
+    }
+    .email{
+        width: 100%;
+    }
+    .map{
+        padding: 15px 1px;
+        background-color: #545385;
+        border-radius: 30px;
+    }
+}

@@ -1,1 +1,39 @@
-<p>plano-basic works!</p>
+<app-nav-bar></app-nav-bar>
+<app-header header="PLANO BASIC"></app-header>
+<div class="leiaut-plano">
+    <div class="leiaut-bloco-01">
+        <div class="img-plano"></div>
+    </div>
+    <div class="title">
+        <h2>PLANO BASIC</h2>
+        <h2 class="valor" >U$: 100,00</h2>
+    </div>
+    <div class="corpo">
+        <div class="bloco-01">
+            <div class="title">
+                <h3>Sobre o curso:</h3>
+            </div>
+            <div class="texto">
+                <h4>Benefícios</h4>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Curso Básico</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Licença de Negociações (01 bot)</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Prazo para atendimento em até 48h</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>SALDO REVERTIDO PARA OPERAÇÕES!</p>
+            </div>
+        </div>
+        <div class="bloco-02">
+            <div class="title">
+                <h3>Formas de pagamentos</h3>
+            </div>
+            <div class="formas-de-paga">
+                <button class="btn" (click)="openDialogBoleto()"><i class="fas fa-file-invoice icon-pagamento"></i>BOLETO</button>
+                <button class="btn" (click)="openDialogPix()"><i class="fab fa-pix icon-pagamento"></i>PIX</button>
+                <button class="btn" (click)="openDialogTed()"><i class="fas fa-exchange-alt icon-pagamento"></i>TED</button>
+                <button class="btn" (click)="openDialogWallet()"><i class="fas fa-wallet icon-pagamento"></i>WALLET</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

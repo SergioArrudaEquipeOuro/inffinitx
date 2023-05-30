@@ -1,1 +1,44 @@
-<p>plano-platinum works!</p>
+<app-nav-bar></app-nav-bar>
+<app-header header="PLANO PLATINUM"></app-header>
+<div class="leiaut-plano">
+    <div class="leiaut-bloco-01">
+        <div class="img-plano"></div>
+    </div>
+    <div class="title">
+        <h2>PLANO PLATINUM</h2>
+        <h2 class="valor" >U$: 1.000,00</h2>
+    </div>
+    <div class="corpo">
+        <div class="bloco-01">
+            <div class="title">
+                <h3>Sobre o curso:</h3>
+            </div>
+            <div class="texto">
+                <h4>Benefícios</h4>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Biblioteca de cursos</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Curso avançado</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Sala de sinais</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Mentoria</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Acompanhamento diário  (analista sênior) </p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Prioridade de atendimento e suporte</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Grupo de negociações exclusivo</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Licença de negociações  (até 05 bots)</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>Prazo para atendimento em até 12h</p>
+                <p><i class="fa fa-check verificar" aria-hidden="true"></i>SALDO REVERTIDO PARA OPERAÇÕES!</p>
+            </div>
+        </div>
+        <div class="bloco-02">
+            <div class="title">
+                <h3>Formas de pagamentos</h3>
+            </div>
+            <div class="formas-de-paga">
+                <button class="btn" (click)="openDialogBoleto()"><i class="fas fa-file-invoice icon-pagamento"></i>BOLETO</button>
+                <button class="btn" (click)="openDialogPix()"><i class="fab fa-pix icon-pagamento"></i>PIX</button>
+                <button class="btn" (click)="openDialogTed()"><i class="fas fa-exchange-alt icon-pagamento"></i>TED</button>
+                <button class="btn" (click)="openDialogWallet()"><i class="fas fa-wallet icon-pagamento"></i>WALLET</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

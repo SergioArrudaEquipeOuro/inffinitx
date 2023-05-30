@@ -1,0 +1,133 @@
+.pix{
+    background-color: rgb(240, 240, 240);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.bloco-02{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.qr-code{
+    height: 150px;
+    width: 150px;
+    background-image: url('../../../assets/media/qr-code-pix.png');
+    background-size: cover;
+}
+.whatsapp{
+    
+
+    display: flex;
+    align-items: center;
+}
+.whatsapp .logo{
+    height: 60px;
+    width: 60px;
+    background-image: url('../../../assets/media/whatsapp-logo.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.icon-pagamento{
+    color: #a3a3a3; 
+    margin-right: 10px;
+}
+.formas-de-paga{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+.formas-de-paga button{
+    margin: 10px 0;
+}
+
+
+
+.leiaut-bloco-01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-plano{
+    height: 300px;
+    width: 300px;
+    background-image: url('../../../assets/media/plano-premium.png');
+    background-size: cover;
+}
+
+.leiaut-plano .title{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leiaut-plano .title h2{
+    font-weight: bolder;
+    color: #272727;
+}
+
+.corpo{
+    background-color: #353858;
+    border-radius: 30px;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.bloco-01,
+.bloco-02{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.verificar{
+    color: #87d414;
+    font-size: 30px;
+    margin-right: 15px;
+}
+.texto p{
+    font-size: 20px;
+    color: #3f3f3f;
+}
+.texto h4{
+    font-weight: bolder;
+    color: #2c3283;
+}
+.title h3{
+    font-weight: bolder;
+    color: #383838;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.title .valor{
+    font-size: 60px;
+    
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .corpo{
+        flex-direction: column;
+        padding:20px;
+    }
+    .bloco-02{
+        width: 100%;
+        margin-top: 20px;
+    }
+}

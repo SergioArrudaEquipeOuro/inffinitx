@@ -1,0 +1,120 @@
+.btn{
+    background-color: #6bc33c;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 7px 25px;
+    margin: 0 30px;
+    transition: 0.5s;
+    margin: 5px;
+    position: absolute;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #6bc33c;
+    border: 1px solid #6bc33c;
+}
+
+.corpo-01 {
+padding: 30px 0 0 30px;
+
+}
+
+
+
+
+.cadastro-form {
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+.cadastro-form {
+    
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .checkbox-group label {
+    display: inline;
+    font-weight: normal;
+  }
+  
+.telefone{
+    
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}  
+.tel{
+   display: flex;
+}
+#countryCode{
+    width: 20%;
+    margin-right: 20px;
+}
+
+/* Estilizando o checkbox */
+input[type="checkbox"] {
+    /* Definindo tamanho */
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    
+  }
+
+  
+  /* Estilizando o rótulo (texto do checkbox) */
+  label {
+    /* Adicionando margem à esquerda para criar espaço entre o checkbox e o texto */
+    margin-left: 5px;
+    /* Definindo cor do texto */
+    color: #333;
+}
+
+.checkbox-group{
+    margin: 20px ;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}

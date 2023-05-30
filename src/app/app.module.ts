@@ -36,6 +36,8 @@ import { PlataformaComponent } from './pages/plataforma/plataforma.component';
 import { ProdutosComponent } from './pages/produtos/produtos.component';
 import { SuporteComponent } from './pages/suporte/suporte.component';
 import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 const routes: Routes = [
@@ -121,6 +123,7 @@ const routes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(routes),
     FormsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

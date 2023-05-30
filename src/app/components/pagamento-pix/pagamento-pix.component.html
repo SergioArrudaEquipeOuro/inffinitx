@@ -1,1 +1,24 @@
-<p>pagamento-pix works!</p>
+<div class="pagamento">
+    <div class="pix">
+        <div class="close"><button class="btn-close" (click)="close()"><i class="fas fa-times icon-close"></i></button></div>
+        <div class="bloco-01">
+            <div class="title">
+                <h2>Pague com</h2>
+                <h2><i class="fab fa-pix icon-pix"></i>PIX</h2>
+            </div>
+            <div class="bloco-02">
+                <div class="qr-code"></div>
+                
+            </div>
+            <div class="texto">
+                <p>Chave: 48.549.926/0001-67</p>
+                <p>METHA SOLUCOES E PROCESSAMENTOS LTDA</p>
+                <p>Descrição: (Sugestão do seu consultor)</p>
+            </div>
+            <div class="copy">
+                <button class="btn" (click)="copy()"><i class="fa fa-clone icon"></i>Copiar chave pix</button>
+            </div>
+        </div>
+        
+    </div>
+</div>

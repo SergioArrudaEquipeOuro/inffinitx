@@ -1,0 +1,268 @@
+p{
+    font-size: 20px;
+}
+.img{
+    height: 200px;
+    width: 200px;
+}
+h2, h3{
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+.title h2{
+    max-width: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+.corpo-01{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.corpo-01 .title h1{
+    font-weight: bolder;
+    color: #272727;
+}
+.corpo-01 .title h2{
+    font-weight: bolder;
+    color: #202780;
+}
+
+
+/* CORPO - 02 */
+
+.corpo-02{
+    
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0 50PX;
+    transition: 0.3s;
+}
+
+.corpo-02 .title h2,
+.corpo-02 .texto p{
+    color: #3f3f3f;
+}
+
+.corpo-02 .title h2{
+    font-weight: bolder;
+    color: #272727;
+    font-size: 45px;
+}
+
+.corpo-02 .texto  a{
+    /* color: #191283; */
+    font-weight: bolder;
+}
+
+.corpo-02 .texto{
+    font-size: 20px;
+}
+
+
+.corpo-02:hover{
+    
+    background: #970e0e;
+    border-radius: 100px;
+    
+}
+.corpo-02:hover .title h2{
+    color:rgb(255, 255, 255);
+}
+.corpo-02:hover .texto p{
+    color:#fff
+}
+
+
+
+/* CORPO - 03 */
+
+.corpo-03{
+    
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.corpo-03 .bloco-01{
+    margin: 20px;
+}
+.corpo-03 .img{
+    
+   
+    background-image: url('../../../assets/media/check.png');
+    background-size: cover;
+}
+.corpo-03 .bloco-02{
+    max-width: 700px;
+}
+
+
+
+/* CORPO - 04 */
+
+.corpo-04{
+    
+    padding: 30px;
+    max-width: 80%;
+    margin: auto;
+}
+.corpo-04 .title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.corpo-04 .title h2{
+    max-width: 600px;
+}
+.corpo-04 .title .img{
+    
+    background-image: url('../../../assets/media/no-check.png');
+    background-size: cover;
+}
+
+/* CORPO - 05 */
+
+.corpo-05{
+    
+    width: 85%;
+    padding: 50px;
+    margin: auto;
+}
+.corpo-05 .title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.corpo-05 .title .img{
+    background-image: url('../../../assets/media/no-check.png');
+    background-size: cover;
+    margin-right: 30px;
+}
+.corpo-05 .title h2{
+    max-width: 700px;
+}
+
+
+/* CORPO - 06 */
+
+.corpo-06{
+    background: #e7e7e7;
+    padding: 30px 50px;
+    margin: 0 50px;
+    border-radius: 30px;
+    
+}
+.corpo-06 .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+}
+.corpo-06 .title .img{
+    background-image: url('../../../assets/media/no-check.png');
+    background-size: cover;
+}
+
+/* CORPO - 07 */
+
+
+.corpo-07{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+.corpo-07 .img{
+    background-image: url('../../../assets/media/check.png');
+    background-size: cover;
+    
+}
+.corpo-07 .bloco-01{
+    padding: 20px;
+}
+.corpo-07 .bloco-02{
+    max-width: 70%;
+}
+
+/* CORPO - 08 */
+
+.corpo-08{
+    background: #ffffff;
+    padding: 50px;
+}
+.corpo-08 .bloco-01,
+.corpo-08 .bloco-02,
+.corpo-08 .bloco-03{
+    margin: 50px 0;
+}
+
+.corpo-08 .bloco-02 .title,
+.corpo-08 .bloco-02 .texto,
+.corpo-08 .bloco-03 .title,
+.corpo-08 .bloco-03 .texto{
+    padding: 20px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .img{
+        height: 100px;
+        width: 100px;
+    }
+    .corpo-02{
+        padding: 0;
+    }
+    .corpo-03{
+        flex-direction: column;
+        background: #e0e0e0;
+        border-radius: 30px;
+    }
+    .corpo-04{
+        
+    }
+    .corpo-04 .title,
+    .corpo-05 .title,
+    .corpo-06 .title,
+    .corpo-07{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .corpo-05{
+        background: #ebe9e9;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .corpo-06{
+        background: #ffffff;
+        padding: 10px;
+    }
+    .corpo-07{
+        background: #ebe9e9;
+    }
+    .corpo-08{
+        background: #ffffff;
+        padding: 15px;
+    }
+}

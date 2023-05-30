@@ -1,0 +1,103 @@
+.pagamento{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    
+}
+.pix{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title h2{
+    color: rgb(44, 44, 44);
+    font-weight: bolder;
+    font-size: 50px;
+}
+.icon-pix{
+    color: #49B2A4;
+    margin-right: 15px;
+}
+
+.bloco-02{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.qr-code{
+    height: 200px;
+    width: 200px;
+    background-image: url('../../../assets/media/qr-code-pix.png');
+    background-size: cover;
+    border-radius: 30px;
+    margin: 25px 0;
+    
+}
+.whatsapp{
+    
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.whatsapp .logo{
+    height: 60px;
+    width: 60px;
+    background-image: url('../../../assets/media/whatsapp-logo.png');
+    background-size: cover;
+    cursor: pointer;
+    margin: 10px ;
+}
+
+.texto p{
+    margin: 0;
+}
+.texto{
+    margin: 20px 0;
+}
+
+:host {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .close{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .btn-close{
+    background: rgb(93, 194, 93);
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    
+  }
+  .icon-close{
+    color: #ffff;
+  }
+
+  .copy .icon{
+    color: #ffff;
+    margin-right: 10px;
+  }

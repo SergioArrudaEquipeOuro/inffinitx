@@ -1,0 +1,181 @@
+.corpo-01{
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    max-width: 800px;
+}
+.texto p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* CORPO - 02 */
+
+.corpo-02{
+    
+    display: flex;
+}
+
+.c2b1{
+    
+    width: 50%;
+    padding: 30px;
+}
+.c2b2{
+    background-image: url("../../../assets/media/plataforma-corpo-02-img3.png");
+    width: 50%;
+    min-height: 300px;
+    background-size: cover;
+}
+.texto-p{
+    display: flex;
+    
+    margin: 10px 0;
+    padding:  5px 20px;
+
+    justify-content: start;
+    align-items: center;
+    
+}
+.title h2{
+    color: rgb(40, 40, 134);
+    font-weight: bolder;
+}
+.texto-p p{
+    margin:  5px 15px;
+    color: rgb(40, 40, 134);
+}
+.custom-icon{
+    color: rgb(40, 40, 134);
+}
+
+.terminal-color{
+    color: white;
+    margin: 10px;
+}
+
+.btn:hover .terminal-color{
+    color: #6bc33c;
+}
+
+
+/* CORPO - 03 */
+
+.corpo-03{
+    
+    padding: 30px 10px;
+    display: flex;
+}
+.c3b1{
+    background-image: url('../../../assets/media/plataforma-corpo-03-img1.png');
+    min-height: 300px;
+    width: 50%;
+    background-size: cover;
+    background-position: center center;
+}
+.c3b2{
+    width: 50%;
+    padding: 0 10px;
+
+}
+
+/* CORPO - 04 */
+
+.corpo-04{
+    display: flex;
+    height: 500px;
+    
+}
+
+.c4b1{
+    width: 50%;
+    
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.c4b2{
+    width: 50%;
+    background-image: url('../../../assets/media/plataforma-corpo-04-img1.png');
+    background-size: cover;
+    
+}
+.btn-c4{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.btn:hover .btn-c4{
+    color: #6bc33c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .corpo-01{
+        padding: 0;
+    }
+    .corpo-02{
+        flex-direction: column;
+        height: auto;
+        margin: 50px 0;
+    }
+    .c2b1{
+        width: 100%;
+        margin: 50px 0;
+    }
+    .c2b2{
+        width: 100%;
+        background-size: cover;
+        padding: 0 5px ;
+    }
+
+    .corpo-03{
+        flex-direction: column;
+    }
+    .c3b1, .c3b2{
+        width: 100%;
+    }
+    .corpo-04{
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .c4b1, .c4b2{
+        width: 100%;
+    }
+    .btn-app {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .btn-app .btn{
+        margin: 15px 0;
+    }
+
+    .texto-p p{
+        margin:  5px 5px;
+        
+    }
+        
+}

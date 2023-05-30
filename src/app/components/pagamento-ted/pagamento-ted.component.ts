@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-pagamento-ted',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./pagamento-ted.component.css']
 })
 export class PagamentoTedComponent {
+
+  constructor(public dialogRef: MatDialogRef<PagamentoTedComponent>,){
+  }
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
+  close(): void{
+    this.dialogRef.close();
+  }
+
 
 }
