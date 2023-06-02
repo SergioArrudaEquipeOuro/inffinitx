@@ -35,7 +35,35 @@
       position: relative; /* Adiciona uma posição relativa ao navbar */
       
     }
-   
+    .bemVindo{
+      background: #6e81d3;
+      padding: 0 15px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .bemVindo h4{
+      color: #ffffff;
+      margin: 0;
+    }
+    .bemVindo a{
+      color: #383838;
+      margin: 0;
+    }
+    .bemVindo a:hover{
+      color: #9c9c9c;
+      margin: 0;
+    }
+    .bemVindo h4{
+      padding: 0 15px;
+      font-weight: bolder;
+      font-size: 17px;
+    }
+    .bemVindo a{
+      font-size: 17px;
+    }
     
     ul,
     li {
@@ -58,22 +86,86 @@
     }
     
     .btn-cadastrar {
-      background-color: #6bc33c;
+      background-color: #5eca54;
       color: white;
       border-radius: 25px;
       border: none;
       cursor: pointer;
-      padding: 7px 25px;
+      padding: 15px 25px;
       margin: 0 30px;
       transition: 0.5s;
       width: 150px;
+      
     }
     
     .btn-cadastrar:hover {
       background-color: #fff;
-      color: #6bc33c;
-      border: 1px solid #6bc33c;
+      color: #5eca54;
+      border: 1px solid #5eca54;
     }
+    .icon{
+      color: #fff;
+      padding: 0 10px;
+      font-size: 20px;
+    }
+    
+    
+
+
+
+
+    .sair {
+      position: relative;
+    }
+    
+    .submenu-sair {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.3s, max-height 0.3s;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 8px;
+      margin: 8px 0 0;
+      list-style: none;
+      z-index: 999;
+    }
+    
+    .submenu-sair.show {
+      opacity: 1;
+      max-height: 200px; /* Ajuste a altura máxima conforme necessário */
+    }
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     @media screen and (max-width: 768px) {
       .btn-cadastrar {

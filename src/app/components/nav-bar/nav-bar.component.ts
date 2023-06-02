@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,6 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
+
+  constructor (
+    private router: Router
+  ){}
+
+    nomeUsuario:string = '';
+
   isNavbarOpen = false;
   isInvestirSubMenuOpen = false;
   isTraderSubMenuOpen = false;
@@ -23,4 +31,33 @@ export class NavBarComponent {
     this.isTraderSubMenuOpen = !this.isTraderSubMenuOpen;
     this.isInvestirSubMenuOpen = false; // Fecha o submenu Investir ao abrir o submenu Trader
   }
+
+  areaCliente(){
+    if(localStorage.getItem('login') == 'logado'){
+      this.router.navigateByUrl('/cursos')
+    }else{
+      this.router.navigateByUrl('/login')
+    }
+    
+  }
+  logout(){
+    localStorage.removeItem('nome');
+    this.router.navigateByUrl('/home');
+    localStorage.setItem('login', 'deslogado');
+    
+  }
+  
+  
+  showLogout: boolean = false;
+
+  isLogged: boolean = false;
+  
+  ngOnInit(): void {
+    this.isLogged = localStorage.getItem('login') === 'logado';
+    if(localStorage.getItem('nome') !== null){
+      this.nomeUsuario = localStorage.getItem('nome') ?? '';
+    }
+    
+  }
 }
+  

@@ -31,10 +31,30 @@
           <a class="nav-link" routerLink="/suporte">Suporte</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/login">Área do Cliente</a>
+          <a class="nav-link" (click)="areaCliente()">Área do Cliente</a>
+        </li>
+        <li class="nav-item bemVindo" *ngIf="isLogged">
+          <h4> <i class="fas fa-user icon"></i>{{nomeUsuario}}</h4>
+          
+          
+          
+          <div class="sair" [class.has-logout]="showLogout">
+            <ul>
+              <li (click)="showLogout = !showLogout">
+                <i class="fas fa-chevron-down icon" style="cursor: pointer;"></i>
+                <ul class="submenu-sair" [class.show]="showLogout">
+                  <li><a class="nav-link" (click)="logout()">Sair</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+          
+          
+          
         </li>
       </ul>
     </div>
-    <button routerLink="/cadastro" class="btn-cadastrar">Cadastre-se</button>
+    <button routerLink="/cadastro" class="btn-cadastrar" *ngIf="!isLogged">Cadastre-se</button>
   </nav>
   

@@ -37,6 +37,8 @@ import { ProdutosComponent } from './pages/produtos/produtos.component';
 import { SuporteComponent } from './pages/suporte/suporte.component';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -76,6 +78,7 @@ const routes: Routes = [
   { path: 'plano-premium', component: PlanoPremiumComponent },
   { path: 'plano-platinum', component: PlanoPlatinumComponent },
   { path: 'nossos-termos', component: NossosTermosComponent },
+  
 
 
 
@@ -124,6 +127,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     FormsModule,
     MatDialogModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 .art-3d{
     width: 100%;
     height: 300px;
-    background: blue;
+    background: rgb(59, 59, 180);
     margin: 100px 0 ;
     display: flex;
     justify-content: center;
@@ -9,10 +9,28 @@
   }
   .art-3d img{
     position: absolute;
+    float: right;
     top: 50px;
+    right: 0%;
     
   }
-  
+  .art-3d .texto{
+    position: absolute;
+    float: left;
+    left: 0%;
+    max-width: 50%;
+    padding: 30px;
+  }
+  .texto h2{
+    color: #ffff;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  .texto p{
+    color: #ffff;
+    font-weight: bolder;
+    font-size: 30px;
+  }
   
   
   
@@ -179,6 +197,25 @@
     }
     
     @media screen and (max-width: 768px) {
+
+      .art-3d .texto{
+        position: relative;
+        float: left;
+        left: 0%;
+        max-width: 100%;
+        padding: 30px;
+        
+      }
+
+      .art-3d img{
+        display: none;
+      }
+      .texto{
+        width: 100%;
+      }
+      .texto h2{
+        width: 100%;
+      }
       .plan{
         padding: 15px;
       }

@@ -1,8 +1,7 @@
-import { Component, AfterViewInit } from '@angular/core';
-
-
-
-
+import { Component } from '@angular/core';
+import { UsuarioService } from 'src/app/Services/usuario.service';
+import { Usuario } from '../../Model/usuario';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -11,28 +10,20 @@ import { Component, AfterViewInit } from '@angular/core';
 })
 export class CadastroComponent {
 
-  user = {
+  constructor(private router: Router, private service: UsuarioService) {}
+
+  user: any = {
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
-    countryCode: '',
     birthdate: '',
-    address: '',
-    addressInfo: '',
-    city: '',
-    country: '',
-    zipcode: '',
-    state: '',
-    reference: '',
-    baseCurrency: '',
+    password: '',
     usPerson: false,
     terms: false,
     receiveNews: false,
     receiveMarketUpdates: false
   };
-
- 
 
   countries = [
     'Afeganistão',
@@ -230,32 +221,64 @@ export class CadastroComponent {
     'Zimbábue'
   ];
 
-  formatPhoneNumber(phoneNumber: string): string {
-    // Remover caracteres indesejados (como traços, pontos e parênteses)
+  /* formatPhoneNumber(phoneNumber: string): string {
     const cleanedPhoneNumber = phoneNumber.replace(/[-.()]/g, '');
-
-    // Formatar o número de telefone
     let formattedPhoneNumber = '+';
-
-    // Adicionar o código de região (no exemplo, +55 para o Brasil)
     formattedPhoneNumber += cleanedPhoneNumber.substr(0, 2) + ' ';
-
-    // Adicionar o DDD
     formattedPhoneNumber += cleanedPhoneNumber.substr(2, 2) + ' ';
-
-    // Adicionar o primeiro dígito após o DDD
     formattedPhoneNumber += cleanedPhoneNumber.substr(4, 1) + ' ';
-
-    // Adicionar o restante do número de telefone
     formattedPhoneNumber += cleanedPhoneNumber.substr(5);
-
     return formattedPhoneNumber;
-  }
+  } */
 
   registerUser() {
-    // Aqui você pode fazer a lógica para enviar os dados do usuário para o banco de dados
-    console.log('Dados do usuário:', this.user);
-    // Implemente a lógica de envio para o banco de dados aqui
+    const usuario: Usuario = {
+      idUsuario: '', // Defina o valor apropriado
+      nome: this.user.firstName,
+      sobrenome: this.user.lastName,
+      email: this.user.email,
+      login: this.user.login, // Adicione a propriedade login
+      password: this.user.password, // Adicione a propriedade password
+      telefone: this.user.phone,
+      dataDeNascimento: new Date(this.user.birthdate),
+      endereco: this.user.address,
+      informacoesDeEndereco: this.user.addressInfo,
+      cidade: this.user.city,
+      pais: this.user.country,
+      cep: this.user.zipcode,
+      estado: this.user.state,
+      referencia: this.user.reference
+    };
+  
+    this.service.cadastrarUsuario(usuario).subscribe(
+      response => {
+        console.log('Usuário cadastrado com sucesso:', response);
+        console.log(usuario);
+        console.log("login: "+usuario.login+" Senha: "+usuario.password);
+      },
+      error => {
+        console.error('Erro ao cadastrar usuário:', error);
+      }
+    );
+    const rotaDesejada = '/home';
+    this.router.navigateByUrl(rotaDesejada)
   }
 
+  
+  
+
+  email(email: string = 'vimvmvbnmvbnmvi@gmail.com') {
+    this.service.buscarEmail(email).subscribe(
+      (user: any) => {
+        this.user = user;
+        console.log(this.user);
+      },
+      (error: any) => {
+        console.error(error);
+        alert('Email não cadastrado')
+      }
+    );
+  }
+  
+  
 }
