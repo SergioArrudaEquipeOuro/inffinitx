@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 interface Lesson {
@@ -21,6 +21,7 @@ export class VideoGalleryComponent {
 
   
   module1Lessons: Lesson[] = [
+    { title: 'Aula 00', videoUrl: 'https://rumble.com/embed/v25ymuc/?pub=4' },
     { title: 'Aula 01', videoUrl: 'https://rumble.com/embed/v261gfa/?pub=253wa8' },
     { title: 'Aula 02', videoUrl: 'https://rumble.com/embed/v262p7i/?pub=253wa8' },
     { title: 'Aula 03', videoUrl: 'https://rumble.com/embed/v262rc0/?pub=253wa8' },
@@ -124,7 +125,11 @@ export class VideoGalleryComponent {
     { title: 'Aula 06', videoUrl: 'https://rumble.com/embed/v27c4ke/?pub=253wa8' },
   ];
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(private sanitizer: DomSanitizer) {
+    this.selectedModule = 'module1';
+    this.selectedLesson = this.module1Lessons[0];
+    this.isVideoOpen = true;
+  }
 
   isSubMenuOpen(module: string): boolean {
     return this.selectedModule === module;
@@ -152,4 +157,7 @@ export class VideoGalleryComponent {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 }
+
+
+
 

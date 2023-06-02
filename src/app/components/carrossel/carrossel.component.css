@@ -52,14 +52,42 @@
     color: rgb(231, 231, 231);
   }
   .img-2 .corpo-01{
-      width: 30%;
+    padding: 50px;
+    
+  }
+  .img-2 .title{
+   width: 100%;
+   padding-left: 50px;
+  }
+  .img-2 .texto{
+    width: 100%;
+   padding-left: 50px;
+  }
+  .img-2 .title h2{
+    font-size: 85px;
+    
+  }
+  .img-2 .texto p{
+    font-size: 20px;
+    
+    width: 60%;
+  }
+  .img-2 .corpo-01{
+      width: 60%;
       display: flex;
       flex-direction: column;
       justify-content: start;
-      align-items: center;
-      padding: 30px;
+      align-items: start;
+      padding: 50px 10px;
       float: left;
+      align-items: center;
       
+  }
+  .btn-home{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
   .texto{
     margin: 20px 0;
