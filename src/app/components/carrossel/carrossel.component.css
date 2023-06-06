@@ -15,22 +15,24 @@
     
   }
   .btn{
-    background-color: #6bc33c;
-    color: white;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    padding: 7px 25px;
-    margin: 0 30px;
-    transition: 0.5s;
-    min-width: 150px;
-    height: 45px;
+    background-color: #3A3C75;
+      color: white;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+      padding: 15px 25px;
+      margin: 0 30px;
+      transition: 0.2s;
+      width: 200px;
+      border: 1px solid #3A3C75;
+      align-items: center;
+      justify-content: center;
+      display: flex;
   }
   .btn:hover{
-    background-color: #fff;
-    color: #6bc33c;
-    border: 1px solid #6bc33c;
-    margin: 0 29px;
+    background-color: #2acf2f;
+      color: #ffffff;
+      border: 1px solid #2acf2f;
   }
   .img-1,
   .img-2,
@@ -93,11 +95,11 @@
     margin: 20px 0;
   }
   .corpo-02{
-    background-image: url('../../../assets/media/carrosel-img1.png');
-    background-size: 50%;
+    background-image: url('../../../assets/media/carrosel-img2.png');
+    background-size: 99%;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 40%;
+    width: 50%;
   }
   .img-3 .corpo-01{
     width: 60%;
@@ -113,8 +115,6 @@
   }
   .img-3 .texto,
   .img-3 .lista{
-    
-    
     width: 100%;
   }
   

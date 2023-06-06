@@ -22,6 +22,30 @@
   
     
   }
+  .icon{
+    color: #ffffff;
+    font-size: 30px;
+    
+  }
+  .btn-rede-social{
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 15px;
+    border: none;
+    
+  }
+  .facebook{
+    background-color: #1462c1;
+  }
+  .twitter{
+    background-color: #1D9BF0;
+  }
+  .instagram{
+    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  }
+
+
   .c9b1{
     padding: 0 30px;
   }

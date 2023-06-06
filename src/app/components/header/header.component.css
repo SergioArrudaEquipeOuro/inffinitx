@@ -5,14 +5,21 @@
     flex-direction: column;
     width: 100%;
     min-height: 400px;
-    background-image: url(../../../assets/media/paisagem-3.svg);
-    background-size: cover;
-    background-position: center center;
-    margin-top: -60px;
+    background-image: url("../../../assets/media/paisagem.png");
+    background-size: 100% 100%;
+    background-position: center bottom;
+    /* margin-top: -60px; */
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .corpo-01 h1 {
-    color: white;
+    color: #ffffff;
     text-align: center;
     font-weight: bolder;
+    font-size: 60px;
+    position: absolute;
+    bottom: 0;
+
+    
 }

@@ -51,7 +51,7 @@
 .c2b2 .texto, .c2b1 .texto {
     margin: 10px 0;
 }
-.c2b2 button{
+/* .c2b2 button{
     background-color: #6bc33c;
     color: white;
     border-radius: 25px;
@@ -66,7 +66,7 @@
     background-color: #fff;
     color: #6bc33c;
     border: 1px solid #6bc33c;
-}
+} */
 
 
 
@@ -85,20 +85,25 @@
     font-weight: lighter;
 }
 .btn{
-    background-color: #6bc33c;
-    color: white;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    padding: 7px 25px;
-    margin: 30px;
-    transition: 0.5s;
-    max-width: 50%;
+    background-color: #3A3C75;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 25px;
+  margin: 0 30px;
+  transition: 0.2s;
+  max-width: 50%;
+  border: 1px solid #3A3C75;
+  font-weight: bolder;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn:hover{
-    background-color: #fff;
-    color: #6bc33c;
-    border: 1px solid #6bc33c;
+    background-color: #2acf2f;
+  color: #ffffff;
+  border: 1px solid #2acf2f;
 }
 
 .nav{

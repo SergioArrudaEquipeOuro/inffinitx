@@ -29,23 +29,41 @@
     color: #717275;
 }
 
+.btn-cadastrar {
+  background-color: #3A3C75;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 25px;
+  margin: 0 30px;
+  transition: 0.2s;
+  width: 140px;
+  border: 1px solid #3A3C75;
+}
+
+.btn-cadastrar:hover {
+  background-color: #2acf2f;
+  color: #ffffff;
+  border: 1px solid #2acf2f;
+}
+
 .btn{
   background-color: #3A3C75;
   color: white;
-  border-radius: 25px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
-  padding: 7px 25px;
+  
   margin: 0 30px;
-  transition: 0.5s;
-  min-width: 150px;
-  height: 45px;
+  transition: 0.2s;
+  max-width: 340px;
+  border: 1px solid #3A3C75;
 }
 .btn:hover{
-  background-color: #fff;
-  color: #3A3C75;
-  border: 1px solid #3A3C75;
-  margin: 0 29px;
+  background-color: #2acf2f;
+  color: #ffffff;
+  border: 1px solid #2acf2f;
 }
 
 .btn-teste{

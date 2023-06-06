@@ -86,22 +86,22 @@
     }
     
     .btn-cadastrar {
-      background-color: #5eca54;
+      background-color: #3A3C75;
       color: white;
-      border-radius: 25px;
+      border-radius: 15px;
       border: none;
       cursor: pointer;
       padding: 15px 25px;
       margin: 0 30px;
-      transition: 0.5s;
-      width: 150px;
-      
+      transition: 0.2s;
+      width: 140px;
+      border: 1px solid #3A3C75;
     }
     
     .btn-cadastrar:hover {
-      background-color: #fff;
-      color: #5eca54;
-      border: 1px solid #5eca54;
+      background-color: #2acf2f;
+      color: #ffffff;
+      border: 1px solid #2acf2f;
     }
     .icon{
       color: #fff;

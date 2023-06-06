@@ -11,10 +11,10 @@ export class MapComponent implements OnInit {
 
   ngOnInit() {
     this.initializeMap();
-  }//-23.604862007774315, -46.67641448074304
+  }//-23.49775583809961, -46.62787862136293
 
   initializeMap() {
-    const center: L.LatLngExpression = [-23.604862007774315, -46.67641448074304]; 
+    const center: L.LatLngExpression = [-23.49775583809961, -46.62787862136293]; 
     this.map = L.map('map').setView(center, 15);
    
     

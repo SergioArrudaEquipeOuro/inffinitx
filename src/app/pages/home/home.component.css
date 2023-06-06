@@ -123,6 +123,7 @@
 
 }
 
+
 .c3b1-texto {
   
   display: flex;
@@ -140,20 +141,16 @@
 
 .c3b1-texto a {
   color: #3c66ef;
+  width: 100px;
   
-  padding: 10px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bolder;
 }
 .c3b1-texto a:hover {
-  color: #ffffff;
-  background-color: #3c66ef;
-  padding: 10px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bolder;
-  
 }
 
 
