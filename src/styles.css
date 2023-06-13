@@ -43,9 +43,9 @@
 }
 
 .btn-cadastrar:hover {
-  background-color: #2acf2f;
+  background-color: #4048e6;
   color: #ffffff;
-  border: 1px solid #2acf2f;
+  border: 1px solid #4048e6;
 }
 
 .btn{
@@ -61,9 +61,9 @@
   border: 1px solid #3A3C75;
 }
 .btn:hover{
-  background-color: #2acf2f;
+  background-color: #cf2a2a;
   color: #ffffff;
-  border: 1px solid #2acf2f;
+  border: 1px solid #cf2a2a;
 }
 
 .btn-teste{

@@ -1,0 +1,74 @@
+td {
+    padding: 5px 30px;
+  }
+  
+  .operacao {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .green-text {
+    color: green;
+  }
+  
+  .red-text {
+    color: #EF5350;
+  }
+  
+  .red-icon {
+    color: #EF5350 !important;
+  }
+  
+  .red-icon,
+  .green-icon {
+    margin-right: 5px;
+  }
+  
+  .red-icon,
+  .red-text {
+    color: #EF5350 !important;
+  }
+  
+  .green-icon,
+  .green-text {
+    color: #26A69A !important;
+  }
+  
+  .aave {
+    height: 30px;
+    width: 30px;
+    background-image: url("../../../assets/media/aave-logo.png");
+    background-size: cover;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    thead{
+      display: none;
+    }
+    tbody tr{
+     background: #eeeeee;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     border-radius: 20px;
+     border: 5px solid rgb(203, 203, 203);
+     margin: 10px 0;
+     width: 100%;
+     
+    }
+    td{
+      padding:8px  8px
+    };
+  }

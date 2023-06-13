@@ -38,6 +38,12 @@ import { SuporteComponent } from './pages/suporte/suporte.component';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
+import { PlanoPromocionalComponent } from './pages/plano-promocional/plano-promocional.component';
+import { PlanoPromoComponent } from './components/plano-promo/plano-promo.component';
+import { AutomatizarComponent } from './pages/automatizar/automatizar.component';
+import { GraficoVelaComponent } from './components/grafico-vela/grafico-vela.component';
+import { TabelaTransacaoComponent } from './components/tabela-transacao/tabela-transacao.component';
+import { GraficoFlyComponent } from './components/grafico-fly/grafico-fly.component';
 
 
 
@@ -59,8 +65,13 @@ const routes: Routes = [
   { path: 'pix', component: PagamentoPixComponent },//Teste de component
   { path: 'ted', component: PagamentoTedComponent },//Teste de component
   { path: 'wallet', component: PagamentoWalletComponent },//Teste de component
-  
+  { path: 'plano-promo', component: PlanoPromoComponent },//Teste de component
   { path: 'header2', component: HeaderPlanosComponent },//Teste de component
+  { path: 'grafico-vela', component: GraficoVelaComponent },//Teste de component
+  { path: 'tabela-transacao', component: TabelaTransacaoComponent },//Teste de component
+
+
+  { path: 'https://www.inffinitx.com/contas', component: PlanosComponent },//Teste de component
 
 
   { path: '', component: HomeComponent },
@@ -78,6 +89,8 @@ const routes: Routes = [
   { path: 'plano-premium', component: PlanoPremiumComponent },
   { path: 'plano-platinum', component: PlanoPlatinumComponent },
   { path: 'nossos-termos', component: NossosTermosComponent },
+  { path: 'plano-promocional', component: PlanoPromocionalComponent },
+  { path: 'automatizar', component: AutomatizarComponent },
   
 
 
@@ -119,6 +132,12 @@ const routes: Routes = [
     PlataformaComponent,
     ProdutosComponent,
     SuporteComponent,
+    PlanoPromocionalComponent,
+    PlanoPromoComponent,
+    AutomatizarComponent,
+    GraficoVelaComponent,
+    TabelaTransacaoComponent,
+    GraficoFlyComponent,
     
   ],
   imports: [

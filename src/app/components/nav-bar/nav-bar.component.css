@@ -18,8 +18,6 @@
       width: 100%;
       display: flex;
       justify-content: space-evenly;
-      
-      
     }
     .nav-item:hover .submenu {
       display: block; /* Exibe o submenu quando o nav-item for hover */
@@ -97,23 +95,16 @@
       width: 140px;
       border: 1px solid #3A3C75;
     }
-    
     .btn-cadastrar:hover {
-      background-color: #2acf2f;
+      background-color: #4048e6;
       color: #ffffff;
-      border: 1px solid #2acf2f;
+      border: 1px solid #4048e6;
     }
     .icon{
       color: #fff;
       padding: 0 10px;
       font-size: 20px;
     }
-    
-    
-
-
-
-
     .sair {
       position: relative;
     }
@@ -138,34 +129,6 @@
       opacity: 1;
       max-height: 200px; /* Ajuste a altura máxima conforme necessário */
     }
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     @media screen and (max-width: 768px) {
       .btn-cadastrar {

@@ -24,6 +24,7 @@
           <ul class="submenu" [class.show]="isTraderSubMenuOpen">
             <li><a routerLink="/plataforma">Plataforma</a></li>
             <li><a routerLink="/contas">Tipos de contas</a></li>
+            <li><a routerLink="/automatizar">Automatizar</a></li>
             <li><a routerLink="/nossos-termos">Nossos termos</a></li>
           </ul>
         </li>
@@ -48,13 +49,9 @@
               </li>
             </ul>
           </div>
-          
-          
-          
-          
         </li>
       </ul>
     </div>
-    <button routerLink="/cadastro" class="btn-cadastrar" *ngIf="!isLogged">Cadastre-se</button>
+    <button  class="btn-cadastrar" *ngIf="!isLogged" (click)="goToCadastroPage()">Cadastre-se</button>
   </nav>
   

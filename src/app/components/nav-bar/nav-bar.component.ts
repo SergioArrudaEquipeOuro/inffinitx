@@ -59,5 +59,9 @@ export class NavBarComponent {
     }
     
   }
+
+  goToCadastroPage() {
+    window.location.href = 'https://inffinitex.com/cadastro';
+  }
 }
   

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AbrirContaComponent {
 
+  goToCadastroPage() {
+    window.location.href = 'https://inffinitex.com/cadastro';
+  }
+
 }

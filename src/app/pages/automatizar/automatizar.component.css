@@ -1,0 +1,31 @@
+.corpo-01{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.corpo-01 .title{
+    padding: 50px 0;
+}
+.bloco-02 .bloco .img{
+    height: 150px;
+    width: 150px;
+}
+.bloco-02{
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.bloco-02 .bloco{
+    width: 300px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .bloco-02{
+        flex-direction: column;
+    }
+}

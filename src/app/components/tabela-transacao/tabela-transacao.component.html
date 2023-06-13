@@ -1,0 +1,52 @@
+<div class="container">
+    <app-grafico-fly></app-grafico-fly>
+    <div class="table-wrapper">
+      <table class="linha">
+        <!-- <thead>
+          <tr>
+            <th>Mrc-OP</th>
+            <th>DATA</th>
+            <th>RESULTADO</th>
+            <th>VALOR</th>
+            <th>OPERAÇÃO</th>
+          </tr>
+        </thead> -->
+        <tbody>
+          <div class="operacoes">
+            <tr *ngFor="let row of tableRows; let i = index">
+              <td><div class="aave"></div></td>
+              <td>
+                <p>{{ row.dateTime }}</p>
+              </td>
+              <td>
+                <p>
+                  <ng-container *ngIf="row.hasDownArrow">
+                    <i class="fas fa-arrow-alt-circle-down red-icon"></i>
+                  </ng-container>
+                  <ng-container *ngIf="!row.hasDownArrow">
+                    <i class="fas fa-arrow-alt-circle-up green-icon"></i>
+                  </ng-container>
+                  <span [ngClass]="{ 'red-text': row.value < 0, 'green-text': row.value >= 0 }">
+                    {{ row.percentage }}%
+                  </span>
+                </p>
+              </td>
+              <td>
+                <p [ngClass]="{ 'red-text': row.value < 0, 'green-text': row.value >= 0 }">
+                  <ng-container *ngIf="row.value < 0">
+                    <i class="fas fa-arrow-alt-circle-down red-icon"></i>
+                  </ng-container>
+                  <ng-container *ngIf="row.value >= 0">
+                    <i class="fas fa-arrow-alt-circle-up green-icon"></i>
+                  </ng-container>
+                  {{ row.value | currency: 'USD': 'symbol':'1.2-2' }}
+                </p>
+              </td>
+              <td class="operacao">{{ row.operation }}</td>
+            </tr>
+          </div>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

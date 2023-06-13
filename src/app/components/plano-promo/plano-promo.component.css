@@ -281,17 +281,5 @@
   }
   
   .icon1{
-    background-image: url('../../../assets/media/BASIC.png');
-  }
-  .icon2{
-    background-image: url('../../../assets/media/START.png');
-  }
-  .icon3{
-    background-image: url('../../../assets/media/PREMIUM.png');
-  }
-  .icon4{
-    background-image: url('../../../assets/media/PLATINUM.png');
-  }
-  .icon5{
     background-image: url('../../../assets/media/PROMO.png');
   }

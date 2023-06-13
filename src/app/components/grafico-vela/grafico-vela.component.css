@@ -1,0 +1,20 @@
+.leiaut{
+    max-width: 100%;
+}
+.title{
+    width: 100%;
+    background: rgb(53, 65, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    color: #ffffff;
+    font-weight: bolder;
+}
+.grafico{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 30px;
+}

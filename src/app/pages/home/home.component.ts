@@ -19,5 +19,8 @@ export class HomeComponent {
     /* localStorage.setItem('login', 'deslogado'); */
   }
 
+  goToCadastroPage() {
+    window.location.href = 'https://inffinitex.com/cadastro';
+  }
   
 }

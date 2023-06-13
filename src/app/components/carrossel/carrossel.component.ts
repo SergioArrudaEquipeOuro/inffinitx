@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CarrosselComponent {
 
+  goToCadastroPage() {
+    window.location.href = 'https://inffinitex.com/cadastro';
+  }
+
 }

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class InvestirComponent {
 
+  goToCadastroPage() {
+    window.location.href = 'https://inffinitex.com/cadastro';
+  }
+
 }

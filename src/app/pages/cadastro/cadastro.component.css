@@ -18,7 +18,8 @@
 
 .corpo-01 {
 padding: 30px 0 0 30px;
-
+position: absolute;
+z-index: 999;
 }
 
 

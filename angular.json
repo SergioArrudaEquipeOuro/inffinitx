@@ -30,7 +30,9 @@
               "node_modules/leaflet/dist/leaflet.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/lightweight-charts/dist/lightweight-charts.standalone.production.js"
+            ]
           },
           "configurations": {
             "production": {

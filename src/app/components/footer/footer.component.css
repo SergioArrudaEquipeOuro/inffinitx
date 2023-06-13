@@ -27,6 +27,9 @@
     font-size: 30px;
     
   }
+  .redes-sociais{
+    display: flex;
+  }
   .btn-rede-social{
     height: 50px;
     width: 50px;

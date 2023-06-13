@@ -21,18 +21,20 @@
       border: none;
       cursor: pointer;
       padding: 15px 25px;
-      margin: 0 30px;
+      margin: 50px 0 0 0;
       transition: 0.2s;
       width: 200px;
       border: 1px solid #3A3C75;
       align-items: center;
       justify-content: center;
       display: flex;
+      font-size: 20px;
+      font-weight: bolder;
   }
   .btn:hover{
-    background-color: #2acf2f;
+    background-color: #4048e6;
       color: #ffffff;
-      border: 1px solid #2acf2f;
+      border: 1px solid #4048e6;
   }
   .img-1,
   .img-2,
@@ -66,7 +68,7 @@
    padding-left: 50px;
   }
   .img-2 .title h2{
-    font-size: 85px;
+    font-size: 50px;
     
   }
   .img-2 .texto p{
@@ -110,17 +112,25 @@
     padding: 30px;
     float: left;
     margin-left: 50px;
-    
-    
   }
   .img-3 .texto,
   .img-3 .lista{
     width: 100%;
   }
-  
+  .img-3 li{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+  }
+  .img-3 .texto p{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+  }
   .corpo-03{
     display: none;
   }
+
   
   .carousel-item .img-2 {
     background-image: url('../../../assets/media/img-2.2.png');

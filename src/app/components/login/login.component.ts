@@ -29,14 +29,15 @@ export class LoginComponent {
   }
 
   login(): void {
-    /* const rotaDesejada = '/cursos';
-    this.router.navigateByUrl(rotaDesejada) */
-    this.user.username = this.username;
+    const rotaDesejada = '/cursos';
+    this.router.navigateByUrl(rotaDesejada)
+
+    /* ------------------------------------ */
+   
+   
+    /* this.user.username = this.username;
     this.user.password = this.password;
-
-    /* console.log(this.user); */
-
-    this.email(this.user.username, this.user.password)
+    this.email(this.user.username, this.user.password) */
   }
 
   logout(){
