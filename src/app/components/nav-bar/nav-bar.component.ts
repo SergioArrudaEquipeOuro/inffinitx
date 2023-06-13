@@ -33,11 +33,13 @@ export class NavBarComponent {
   }
 
   areaCliente(){
-    if(localStorage.getItem('login') == 'logado'){
+    /* if(localStorage.getItem('login') == 'logado'){
       this.router.navigateByUrl('/cursos')
     }else{
       this.router.navigateByUrl('/login')
-    }
+    } */
+
+    window.location.href = 'https://inffinitex.com/cadastro';
     
   }
   logout(){

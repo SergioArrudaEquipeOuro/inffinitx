@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import moment from 'moment';
 
-
-
 @Component({
   selector: 'app-tabela-transacao',
   templateUrl: './tabela-transacao.component.html',
@@ -21,20 +19,25 @@ export class TabelaTransacaoComponent implements OnInit {
 
     this.fetchAaveData();
 
-    this.generateTableRows();
-    setInterval(() => {
-      this.updateCurrentDateTime();
-      this.updateTableRows();
-    }, 2000);
+    this.generateInitialTableRows();
+    this.updateTableRowsWithRandomDelay();
   }
 
   updateCurrentDateTime(): void {
     this.currentDateTime = moment().format('DD-MM-YYYY HH:mm:ss');
   }
 
-  generateTableRows(): void {
+  generateInitialTableRows(): void {
     for (let i = 0; i < 30; i++) {
-      this.addTableRow();
+      const currentSecond = moment().seconds();
+      const randomSubtraction = Math.floor(Math.random() * 11) + 25; // Valor aleatório entre 25 e 35
+      const subtractedSecond = currentSecond - randomSubtraction >= 0 ? currentSecond - randomSubtraction : 60 + (currentSecond - randomSubtraction);
+      const dateTime = moment().subtract(subtractedSecond, 'seconds').format('DD-MM-YYYY HH:mm:ss');
+      const percentage = (Math.random() * (1.22 - 0.10) + 0.10).toFixed(2);
+      const value = this.calculateValue(percentage, false);
+      const operation = this.generateRandomCode();
+
+      this.tableRows.unshift({ dateTime, hasDownArrow: false, percentage, value, operation });
     }
   }
 
@@ -52,19 +55,29 @@ export class TabelaTransacaoComponent implements OnInit {
       hasDownArrow = Math.random() < 0.3;
       if (hasDownArrow) {
         this.downArrowCount++;
-        hasNegativeValue = Math.random() < 0.3; // 50% de chance de gerar um valor negativo
+        hasNegativeValue = Math.random() < 0.5; // 50% de chance de gerar um valor negativo
       }
     } else {
-      hasDownArrow = Math.random() < 0.3; // 50% de chance de gerar um valor negativo
+      hasDownArrow = Math.random() < 0.5; // 50% de chance de gerar um valor negativo
       hasNegativeValue = hasDownArrow;
     }
 
-    const dateTime = moment().subtract(currentSecond, 'seconds').format('DD-MM-YYYY HH:mm:ss');
+    const dateTime = moment().format('DD-MM-YYYY HH:mm:ss');
     const percentage = (Math.random() * (1.22 - 0.10) + 0.10).toFixed(2);
     const value = this.calculateValue(percentage, hasNegativeValue);
     const operation = this.generateRandomCode();
 
     this.tableRows.unshift({ dateTime, hasDownArrow, percentage, value, operation });
+  }
+
+  updateTableRowsWithRandomDelay(): void {
+    const randomDelay = Math.floor(Math.random() * 2000) + 2000; // Valor aleatório entre 2000 e 4000 (2 a 4 segundos)
+
+    setTimeout(() => {
+      this.updateCurrentDateTime();
+      this.updateTableRows();
+      this.updateTableRowsWithRandomDelay(); // Chama a função novamente após o tempo de espera
+    }, randomDelay);
   }
 
   calculateValue(percentage: string, hasNegativeValue: boolean): number {

@@ -85,9 +85,9 @@ const routes: Routes = [
   { path: 'produtos', component: ProdutosComponent },
   { path: 'suporte', component: SuporteComponent },
   { path: 'plano-basic', component: PlanoBasicComponent },
-  { path: 'plano-start', component: PlanoStartComponent },
-  { path: 'plano-premium', component: PlanoPremiumComponent },
-  { path: 'plano-platinum', component: PlanoPlatinumComponent },
+  { path: 'plano-pro', component: PlanoStartComponent },
+  { path: 'plano-expert', component: PlanoPremiumComponent },
+  { path: 'plano-master', component: PlanoPlatinumComponent },
   { path: 'nossos-termos', component: NossosTermosComponent },
   { path: 'plano-promocional', component: PlanoPromocionalComponent },
   { path: 'automatizar', component: AutomatizarComponent },
@@ -95,6 +95,11 @@ const routes: Routes = [
 
 
 
+
+  
+  
+  
+  { path: '**', component: HomeComponent },
 ]
 
 

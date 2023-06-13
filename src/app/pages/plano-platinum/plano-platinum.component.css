@@ -38,12 +38,11 @@
 }
 .formas-de-paga{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    padding: 10px;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    
 }
 .formas-de-paga button{
     margin: 10px 0;
@@ -59,8 +58,11 @@
 .img-plano{
     height: 300px;
     width: 300px;
-    background-image: url('../../../assets/media/plano-platinum.png');
-    background-size: cover;
+    background-image: url('../../../assets/media/PLATINUM.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 20px 0;
 }
 
 .leiaut-plano .title{
