@@ -1,0 +1,147 @@
+.corpo-01{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+
+    background: #f5f5f5;
+}
+.corpo-01 .title h1{
+    font-weight: bolder;
+    color: #373737;
+    font-size: 55px;
+}
+.corpo-01 .title{
+    
+    padding: 20px;
+}
+.corpo-01 .texto{
+    width: 65%;
+    padding: 20px;
+}
+.corpo-01 .texto p{
+    font-weight: bolder;
+    color: #373737;
+    font-size: 30px;
+}
+
+.info{
+    
+    display: flex;
+    justify-content: space-around;
+    margin: 200px 0;
+}
+
+.info .bloco-01{
+    background: #F2F2F2;
+    width: 40%;
+    border-radius: 40px;
+    padding: 50px 30px;
+}
+.info .bloco-02{
+    
+    width: 40%;
+    border-radius: 40px;
+}
+
+.corpo-02 .info .img1{
+    background-image: url('../../../assets/media/como-funciona-img1.jpg');
+    background-size: cover;
+}
+.corpo-02 .info .img2{
+    background-image: url('../../../assets/media/como-funciona-img2.jpg');
+    background-size: cover;
+}
+.corpo-02 .info .img3{
+    background-image: url('../../../assets/media/como-funciona-img3.jpg');
+    background-size: cover;
+}
+.corpo-02 .info .img4{
+    background-image: url('../../../assets/media/como-funciona-img4.jpg');
+    background-size: cover;
+}
+
+.seta-1{
+    height: 100px;
+    width: 100%;
+    background-image: url('../../../assets/media/seta-indicacao.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+
+    transform: rotate(90deg) scalez(-1);
+}
+
+.seta-2{
+    height: 100px;
+    width: 100%;
+    background-image: url('../../../assets/media/seta-indicacao.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+
+    transform: rotate(90deg) scaleY(-1);
+}
+
+
+.corpo-03{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.corpo-03 .title{
+    padding: 30px 0;
+}
+.corpo-03 .h-3{
+    font-size: 70px;
+    font-weight: bolder;
+    color: #25257b;
+}
+.btn-funciona{
+    padding: 30px 0;
+    
+}
+.btn-funciona button{
+    width: 250px;
+    height: 70px;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .corpo-01{
+        padding: 10px;
+    }
+    .corpo-01 .texto{
+        width:100%;
+        padding: 20px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 50px 0;
+    }
+    .info .bloco-01{
+        width: 100%;
+        border-radius: 40px;
+    }
+    .info .bloco-02{
+        width: 100%;
+        border-radius: 40px;
+    }
+}

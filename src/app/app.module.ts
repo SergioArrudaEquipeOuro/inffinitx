@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,7 +45,12 @@ import { AutomatizarComponent } from './pages/automatizar/automatizar.component'
 import { GraficoVelaComponent } from './components/grafico-vela/grafico-vela.component';
 import { TabelaTransacaoComponent } from './components/tabela-transacao/tabela-transacao.component';
 import { GraficoFlyComponent } from './components/grafico-fly/grafico-fly.component';
-
+import { InvestirAgoraComponent } from './components/investir-agora/investir-agora.component';
+import { QuemSomosComponent } from './pages/quem-somos/quem-somos.component';
+import { ComoFuncionaComponent } from './pages/como-funciona/como-funciona.component';
+import { CursoForexComponent } from './components/curso-forex/curso-forex.component';
+import { SimulacaoComponent } from './components/simulacao/simulacao.component';
+import { ForexComponent } from './pages/forex/forex.component';
 
 
 
@@ -60,15 +66,19 @@ const routes: Routes = [
   { path: 'navbar', component: NavBarComponent },//Teste de component
   { path: 'opinioes', component: OpinioesComponent },//Teste de component
   { path: 'faq', component: PerguntasFrequentesComponent },//Teste de component
-  { path: 'planos', component: PlanosComponent },//Teste de component
+  //{ path: 'planos', component: PlanosComponent },//Teste de component
   { path: 'videos', component: VideoGalleryComponent },//Teste de component
   { path: 'pix', component: PagamentoPixComponent },//Teste de component
   { path: 'ted', component: PagamentoTedComponent },//Teste de component
   { path: 'wallet', component: PagamentoWalletComponent },//Teste de component
-  { path: 'plano-promo', component: PlanoPromoComponent },//Teste de component
+  //{ path: 'plano-promo', component: PlanoPromoComponent },//Teste de component
   { path: 'header2', component: HeaderPlanosComponent },//Teste de component
   { path: 'grafico-vela', component: GraficoVelaComponent },//Teste de component
   { path: 'tabela-transacao', component: TabelaTransacaoComponent },//Teste de component
+  { path: 'investir-agora', component: InvestirAgoraComponent },//Teste de component
+  { path: 'fly', component: GraficoFlyComponent },//Teste de component
+  
+  { path: 'simulacao', component: SimulacaoComponent },//Teste de component
 
 
   { path: 'https://www.inffinitx.com/contas', component: PlanosComponent },//Teste de component
@@ -78,7 +88,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'cadastro', component: CadastroComponent },
   { path: 'contas', component: ContasComponent },
-  { path: 'cursos', component: CursosComponent },
+  { path: '8lhLXcPLZeoPW6T8zKCrqxuTPWWod8EI', component: CursosComponent },
   { path: 'investir', component: InvestirComponent },
   { path: 'login', component: LoginUserComponent },
   { path: 'plataforma', component: PlataformaComponent },
@@ -91,6 +101,9 @@ const routes: Routes = [
   { path: 'nossos-termos', component: NossosTermosComponent },
   { path: 'plano-promocional', component: PlanoPromocionalComponent },
   { path: 'automatizar', component: AutomatizarComponent },
+  { path: 'quem-somos', component: QuemSomosComponent },
+  { path: 'como-funciona', component: ComoFuncionaComponent },
+  { path: 'forex', component: ForexComponent },
   
 
 
@@ -143,7 +156,12 @@ const routes: Routes = [
     GraficoVelaComponent,
     TabelaTransacaoComponent,
     GraficoFlyComponent,
-    
+    InvestirAgoraComponent,
+    QuemSomosComponent,
+    ComoFuncionaComponent,
+    CursoForexComponent,
+    SimulacaoComponent,
+    ForexComponent,
   ],
   imports: [
     BrowserModule,
@@ -153,7 +171,7 @@ const routes: Routes = [
     MatDialogModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

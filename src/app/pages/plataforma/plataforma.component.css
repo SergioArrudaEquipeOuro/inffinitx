@@ -59,16 +59,9 @@
     color: white;
     margin: 10px;
 }
-.btn:hover{
-    background-color: #2acf2f;
-    color: #ffffff;
-    border: 1px solid #2acf2f;
-    
-}
 
-.btn:hover .terminal-color{
-    color: #ffffff;
-}
+
+
 
 
 /* CORPO - 03 */

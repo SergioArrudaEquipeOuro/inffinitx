@@ -1,0 +1,23 @@
+<div class="leiaut-menu">
+    <div class="menu">
+      
+      <ul>
+        <span class="icon-container">
+          <i class="fas fa-play-circle icon-video"></i>
+          <h3>Módulos</h3>
+        </span>
+        
+        <li (click)="toggleSubMenu('module1')" [class.active]="selectedModule === 'module1'" class="modulos">Módulo 01</li>
+          <ul *ngIf="isSubMenuOpen('module1')">
+            <li *ngFor="let lesson of module1Lessons" (click)="showLesson(lesson)" class="submenu" [class.selected]="selectedLesson === lesson">{{ lesson.title }}</li>
+          </ul>  
+      </ul>
+    </div>
+    
+    <div *ngIf="isVideoOpen && selectedLesson" id="video-container">
+      <iframe [src]="getSafeUrl(selectedLesson.videoUrl)" id="video" frameborder="0" allowfullscreen ></iframe>
+      <button *ngIf="selectedLesson && isVideoOpen" class="close-button-video" (click)="closeVideo()" >Fechar Vídeo</button>
+    </div>
+  </div>
+  
+  

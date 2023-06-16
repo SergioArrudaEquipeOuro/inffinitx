@@ -1,0 +1,92 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="simulacao-container">
+  <div class="title-simulacao">
+    <h2 class="title">Simulação de Rendimento</h2>
+  </div>
+
+  <div class="input-tabela">
+    <div class="input-group">
+      <label for="valorInicial">Valor Inicial:</label>
+      <input type="number" id="valorInicial" [(ngModel)]="valorInicial">
+    </div>
+
+    <div class="input-group">
+      <label for="periodo">Período:</label>
+      <select id="periodo" [(ngModel)]="periodoSelecionado" (change)="atualizarPeriodo()">
+        <option value="semana">Semana</option>
+        <option value="mes">Mês</option>
+        <option value="ano">Ano</option>
+      </select>
+    </div>
+  </div>
+
+  <button (click)="calcularRendimento()">Calcular</button>
+
+  <div class="tabela-rendimento">
+    <table>
+      <thead>
+        <tr>
+          <th *ngIf="periodoSelecionado === 'semana'">dia</th>
+          <th *ngIf="periodoSelecionado === 'mes'">Semana</th>
+          <th *ngIf="periodoSelecionado === 'ano'">Mês</th>
+          <th>Rendimento</th>
+          <th>Valor Acumulado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="periodoSelecionado === 'semana'">
+          <tr *ngFor="let item of tabelaRendimento">
+            <td>{{ item.dia }}</td>
+            <td>{{ formatarPorcentagem(item.rendimento) }}</td>
+            <td>{{ formatarValor(item.valorAcumulado) }}</td>
+          </tr>
+        </ng-container>
+        <ng-container *ngIf="periodoSelecionado === 'mes'">
+          <tr *ngFor="let item of tabelaRendimento">
+            <td colspan="1">{{ item.semana }}</td>
+            <td>{{ formatarPorcentagem(item.rendimento) }}</td>
+            <td>{{ formatarValor(item.valorAcumulado) }}</td>
+          </tr>
+        </ng-container>
+        <ng-container *ngIf="periodoSelecionado === 'ano'">
+          <tr *ngFor="let item of tabelaRendimento">
+            <td colspan="1">{{ item.mes }}</td>
+            <td>{{ formatarPorcentagem(item.rendimento) }}</td>
+            <td>{{ formatarValor(item.valorAcumulado) }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+<div class="leiaut-grafico" *ngIf="mostrarGrafico">
+  <div class="grafico">
+    <div class="coluna coluna-1" [style.height.px]="100">
+      <span class="valor">{{ formatarValor(valorPoupanca) }}</span>
+      <span class="valor2">Poupança</span>
+    </div>
+    <div class="coluna coluna-2" [style.height.px]="120">
+      <span class="valor">{{ formatarValor(valorSelic) }}</span>
+      <span class="valor2">SELIC</span>
+    </div>
+    <div class="coluna coluna-3" [style.height.px]="220">
+      <span class="valor">{{ formatarValor(valor02)}}</span>
+      <span class="valor2" style="color: #4f5cf5;">INFFINITX</span>
+    </div>
+  </div>
+  <div class="texto">
+    <h1>Veja o <span class="texto-alterar">quanto</span>  você pode</h1>
+    <h1><span class="texto-alterar">ganhar</span> em cada</h1>
+    <h1 class="segmento" style="color: #727272;">segmento</h1>
+    <p>Com a INFFINITX, você tem a oportunidade de aumentar seus ganhos significativamente!</p>
+  </div>
+</div>
+  
+  
+  
+  <app-footer></app-footer>

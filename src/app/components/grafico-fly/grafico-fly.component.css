@@ -1,8 +1,13 @@
-/* Import the Google Font 'Lato' */
+
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 *{
   margin: 0;
   padding: 0;
+}
+.leiaut{
+  
+  display: flex;
+  justify-content: center;
 }
 .title{
     font-size: 40px;
@@ -12,7 +17,7 @@
     color: #ffffff;
     font-size: 20px;
 }
-/* Container styles */
+
 body {
   background-color: #fff;
   color: #333;
@@ -21,7 +26,7 @@ body {
 .info{
   
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 5px 0;
@@ -33,40 +38,44 @@ body {
 }
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
   background: #d5d5d5;
   border-radius: 20px;
-  margin-bottom: 30px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .propriedades{
   background: #ffffff;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 5px;
 }
 .chart {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   font-size: 20px;
   text-align: center;
   font-weight: bolder;
+  margin: 20px;
+  box-sizing: border-box;
 }
 figure{
     margin: 10px;
     
 }
 .chart figcaption {
-  padding: 50px 25px;
-  width: 100px;
-  height: 250px;
-  border: 20px solid #d5d5d5;
-  border-radius: 100px;
-  line-height: 50px;
-  
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .chart img {
@@ -81,9 +90,7 @@ figure{
   padding: 10px;
   font-weight: bolder;
 }
-/* END Container styles */
 
-/* Colors for the circles and positions for the graphics */
 .html {
   top: 50px;
   left: 45px;
@@ -138,7 +145,7 @@ figure{
   transition: stroke-dashoffset 1s;
   -webkit-animation-play-state: running;
   
-  /* firefox bug fix - won't rotate at 90deg angles */
+ 
   -moz-transform: rotate(-89deg) translateX(-190px);
 }
 
@@ -146,10 +153,7 @@ figure{
   stroke-dashoffset: 534 !important;
   -webkit-animation-play-state: paused;
 }
-/* END Circle colors and graphic positions */
 
-
-/* Set the initial values for the animation */
 .chart[data-percent='100'] .outer {
   stroke-dashoffset: 0;
   -webkit-animation: show100 2s;
@@ -186,9 +190,7 @@ button{
     width: 180px;
     color: #202020;
 }
-/* END set initial animation values */
 
-/* Keyframes for the initial animation */
 @-webkit-keyframes show100 {
   from {
     stroke-dashoffset: 537;
@@ -292,7 +294,6 @@ button{
       stroke-dashoffset: 350;
     }
   }
-/* END Keyframes for the initial animation */
 
 
 
@@ -304,11 +305,14 @@ button{
     padding: 0;
     width: 100%;
     border-radius: 0;
+    flex-direction: column-reverse;
   }
+  
 
   .info{
     width: 100%;
     flex-direction: column;
+    
   }
   .propriedades{
     width: 90%;
@@ -316,4 +320,75 @@ button{
   .title{
     padding: 50px 0 0 0;
   }
+}
+
+
+
+
+
+figure {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.chart figcaption {
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.chart img {
+  max-width: 100px;
+  max-height: 100px;
+  background: transparent;
+  margin: 0 auto;
+}
+
+.meio{
+  display: flex;
+  flex-direction: column;
+}
+
+.esquerdo .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  
+}
+.esquerdo,
+.direito{
+  height: 100%;
+}
+.direito .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  
+  height: 100%;
+}
+
+.meio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 50px;
+  padding: 30px;
 }

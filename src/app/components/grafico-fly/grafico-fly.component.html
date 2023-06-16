@@ -1,32 +1,60 @@
-<section class="container">
-    <h3 class="title">Capital aplicado</h3>
-    <!-- HTML Chart -->
-    <figure class="chart" data-percent="100">
-      <figcaption></figcaption>
-      <img class="html" src="../../../assets/media/aave-logo.png">
-      <svg width="200" height="200">
-        
-        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-        
-    </svg>
-      <p>100%</p>
-    </figure>
-    
-    <div class="info">
-      <div class="propriedades nome">
-        <p>Nome do ativo: {{nome}}</p>
-      </div>
-      <div class="propriedades">
-        <p>Preço do ativo: U$: {{preco}}</p>
-      </div>
-      <div class="propriedades">
-        <p>Cap.Mercado: {{capMercado}}</p>
-      </div>
-      <div class="propriedades">
-        <p>capMercado Diluida: {{capMercadoTotalmenteDiluida}}</p>
-      </div>
-      <div class="propriedades">
-        <p>volume 24h: {{volume24h}}</p>
+<div class="leiaut">
+  <section class="container">
+
+
+
+    <!-- ATIVO Chart -->
+    <div class="meio">
+      <h3 class="title">Capital aplicado</h3>
+      <figure class="chart" data-percent="100">
+        <figcaption></figcaption>
+        <img class="html" src="../../../assets/media/aave-logo.png">
+        <svg width="200" height="200">
+          <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+        </svg>
+        <p>100%</p>
+      </figure>
+    </div>
+
+
+
+
+
+    <div class="esquerdo">
+      <div class="info">
+        <div class="propriedades nome">
+          <p>Nome do ativo: {{nome}}</p>
+        </div>
+        <div class="propriedades">
+          <p>Preço do ativo: U$: {{preco}}</p>
+        </div>
+        <div class="propriedades">
+          <p>Cap.Mercado: {{capMercado}}</p>
+        </div>
+        <div class="propriedades">
+          <p>capMercado Diluida: {{capMercadoTotalmenteDiluida}}</p>
+        </div>
+        <div class="propriedades">
+          <p>volume 24h: {{volume24h}}</p>
+        </div>
       </div>
     </div>
-  </section>
+    
+    
+    
+    <div class="direito">
+      <div class="info">
+        <div class="propriedades nome">
+          <p>Saldo aplicado({{nome}}): $ ***,**</p>
+        </div>
+        <div class="propriedades">
+          <p>Ativos (TOTAL): $ ***,**</p>
+        </div>
+        <div class="propriedades">
+          <p>Crédito: $ ***,**</p>
+        </div>
+    </div>
+      
+    </div>
+</section>
+</div>

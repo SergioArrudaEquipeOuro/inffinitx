@@ -58,6 +58,9 @@ export class PlataformaComponent {
     });
   }
 
-
+  goToCadastroPage() {
+    window.location.href = 'https://inffinitex.com/cadastro';
+  }
+  
 
 }

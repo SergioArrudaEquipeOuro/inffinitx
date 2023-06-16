@@ -5,7 +5,7 @@
   }
   
   .carousel-item .img-1 {
-    background-image: url('../../../assets/media/img-1.2.png');
+    background-image: url('../../../assets/media/img-1.2-lite.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -97,7 +97,7 @@
     margin: 20px 0;
   }
   .corpo-02{
-    background-image: url('../../../assets/media/carrosel-img2.png');
+    background-image: url('../../../assets/media/carrosel-img2-lite.png');
     background-size: 99%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -133,7 +133,7 @@
 
   
   .carousel-item .img-2 {
-    background-image: url('../../../assets/media/img-2.2.png');
+    background-image: url('../../../assets/media/img-2.2-lite.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -143,7 +143,7 @@
   }
   
   .carousel-item .img-3 {
-    background-image: url('../../../assets/media/img-3.2.png');
+    background-image: url('../../../assets/media/img-3.2-lite.png');
     background-size: cover;
     background-position: center;
     height: 100vh;

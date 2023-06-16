@@ -1,6 +1,4 @@
 .corpo-01{
-    
-
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -8,8 +6,9 @@
     text-align: center;
     align-items: center;
 }
-.texto, .title{
-    width: 60%;
+.texto, 
+.title{
+    
     font-weight: bolder;
     color: rgb(29, 29, 95);
 }
@@ -24,21 +23,23 @@
 }
 
 .corpo-02{
-    
-
     padding: 20px 0;
     display: flex;
-
+    
 }
 
 .c2b1{
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
+.img{
+    width: 50%;
+    height: 50px;
+    background: #cf2a2a;
+}
 
 
 .c2b2{
@@ -86,24 +87,24 @@
 }
 .btn{
     background-color: #3A3C75;
-  color: white;
-  border-radius: 15px;
-  border: none;
-  cursor: pointer;
-  padding: 15px 25px;
-  margin: 0 30px;
-  transition: 0.2s;
-  max-width: 50%;
-  border: 1px solid #3A3C75;
-  font-weight: bolder;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    margin: 50px 30px;
+    transition: 0.2s;
+    max-width: 50%;
+    border: 1px solid #3A3C75;
+    font-weight: bolder;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn:hover{
-    background-color: #2acf2f;
-  color: #ffffff;
-  border: 1px solid #2acf2f;
+    background-color: #cf2a2a;
+    color: #ffffff;
+    border: 1px solid #cf2a2a;
 }
 
 .nav{
@@ -112,6 +113,8 @@
     align-items: center;
 
 }
+
+
 
 @media screen and (max-width: 768px) {
     .corpo-02, .c2b2,.c2b1{

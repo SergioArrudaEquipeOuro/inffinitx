@@ -1,0 +1,351 @@
+.corpo-01{
+    
+}
+.corpo-01 .grid-01{
+    background: #F4F4F4;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'g1 g2' ;
+}
+.corpo-01 .g1{
+    grid-area: g1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.corpo-01 .g1 .title{
+    width: 60%;
+}
+.corpo-01 .g1 .title h1{
+    font-weight: bolder;
+    color: #393B73;
+}
+.corpo-01 .g1 .texto p{
+    font-size: 20px;
+    color: #6a6a6a;
+}
+.corpo-01 .g2{
+    grid-area: g2;
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../../../assets/media/image-background-quem-somos.png');
+    background-size: cover;
+    
+}
+.corpo-01 .img1{
+    width: 300px;
+    height: 400px;
+    background-image: url("../../../assets/media/image-escriorio1-lite.png");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+}
+
+.corpo-01 .img2{
+    width: 250px;
+    height: 251px;
+    background-image: url("../../../assets/media/image-escriorio2-lite.png");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+}
+
+
+
+
+
+.corpo-02{
+    
+}
+.corpo-02 .grid-01{
+    
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'g1 g2' ;
+}
+.corpo-02 .g1{
+    grid-area: g1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.corpo-02 .g1 .title{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 30px;
+}
+.corpo-02 .g1 .title h1{
+    font-weight: bolder;
+    color: #242424;
+}
+.corpo-02 .g2{
+    grid-area: g2;
+    display: flex;
+    justify-content: space-around;
+}
+.corpo-02 .g2 .title h2{
+    color: #373737;
+    font-weight: bolder;
+}
+.corpo-02 .img1{
+    width: 247px;
+    height: 358px;
+    background-image: url("../../../assets/media/image-generica.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.corpo-02 .img2{
+    width: 161px;
+    height: 251px;
+    background-image: url("../../../assets/media/image-generica.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.corpo-02 .grid-01 .title .h1-2{
+    color: #4B4E99;
+}
+.corpo-02 .grid-01 .g2{
+    display: flex;
+    flex-direction: column;
+}
+.corpo-02 .grid-01 .g2 .info{
+    background-color: #F4F4F4;
+    padding:30px;
+    border-radius: 30px;
+    margin: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.corpo-02 .grid-01 .g2 .info:hover{
+    background-color: #445ed2;
+}
+.corpo-02 .g2 .info:hover .title h2,
+.corpo-02 .g2 .info:hover .texto p{
+    
+    color: #FFFFFF;
+}
+/* .corpo-02 .g2 .title h2{
+    color: #323232;
+    font-weight: bolder;
+} */
+
+
+
+
+.corpo-03{
+    background: #325690;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+.corpo-03 .bloco-02{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.corpo-03 .info{
+    border:8px solid #fbfbfb;
+    max-width: 350px;
+    margin: 30px;
+    border-radius: 40px;
+    padding: 40px 15px;
+}
+.corpo-03 .bloco-01{
+    width: 100%;
+    padding: 50px;
+}
+.corpo-03 .bloco-01 .t1,
+.corpo-03 .bloco-01 .t2{
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.corpo-03 .bloco-01 .t2{
+    font-size: 60px;
+}
+
+.corpo-03 .info .title h2{
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+.corpo-03 .info .texto p{
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.corpo-03 .info .img{
+    height: 80px;
+    width: 80px;
+    /* background: #FFFFFF; */
+    margin: 10px 0 10px 0;
+}
+.corpo-03 .info .img1{
+    background-image: url('../../../assets/media/quem-somos-img1.png');
+    background-size: cover;
+}
+.corpo-03 .info .img2{
+    background-image: url('../../../assets/media/quem-somos-img2.png');
+    background-size: cover;
+}
+.corpo-03 .info .img3{
+    background-image: url('../../../assets/media/quem-somos-img3.png');
+    background-size: cover;
+}
+
+
+.corpo-04{
+    padding: 50px 30px;
+}
+.corpo-04 .info{
+    margin: 20px;
+    display: flex;
+    padding: 30px;
+}
+.corpo-04 .bloco-01{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 50px 0 0;
+}
+.corpo-04 .info .img{
+    width: 250px;
+    height: 160px;
+    
+}
+
+.corpo-04 .info .title h2{
+    font-weight: bolder;
+    font-size: 40px;
+    color: #393B73;
+}
+.corpo-04 .info .texto p{
+    font-weight: bolder;
+    font-size: 20px;
+    color: #646464;
+}
+
+.corpo-04 .bloco-02 .img1{
+    background-image: url('../../../assets/media/quem-somos-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.corpo-04 .bloco-02 .img2{
+    background-image: url('../../../assets/media/quem-somos-2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.corpo-04 .bloco-02 .img3{
+    background-image: url('../../../assets/media/quem-somos-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .corpo-01 .grid-01{
+        background: #f4f4f4;
+        padding: 50px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        'g1'
+        'g2' ;
+    }
+    .corpo-01 .g2{
+        
+        flex-direction: column;
+    }
+    .corpo-01 .img1{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        margin: 10px 0;
+        border-radius: 30px;
+    }
+    .corpo-01 .img2{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        margin: 10px 0;
+        border-radius: 30px;
+    }
+    .corpo-01 .g1 .title{
+        width: 100%;
+    }
+    .corpo-01 .g1{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .corpo-02 .grid-01{
+    
+        padding: 50px 20px;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        'g1''g2' ;
+    }
+    .corpo-03 .bloco-02{
+        flex-direction: column;
+    }
+
+    .corpo-03{
+        padding: 0px;
+    }
+    .corpo-03 .bloco-01{
+        width: 100%;
+        padding: 30px;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    .corpo-04 .info{
+        background: #ededed;
+        margin: 30px 0px;
+        flex-direction: column-reverse;
+        padding: 0px;
+        border-radius: 30px;
+    }
+    .corpo-04 .info .bloco-02{
+        display: flex;
+        justify-content: center;
+    }
+    .corpo-04 .bloco-01{
+        
+        padding: 40px 20px ;
+    }
+    .corpo-04 .info .img{
+        width: 100%;
+        height: 300px;
+        border-radius: 30px 30px 0 0;
+    }
+
+}
