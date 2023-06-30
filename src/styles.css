@@ -87,3 +87,17 @@
   
 }
 
+.CalculadoraCotacao{
+  display: flex;
+  
+}
+.calculadoraValorTotal{
+  font-size: 40px;
+  font-weight: bolder;
+  color: #383838;
+}
+
+#b1{
+  min-width: 300px;
+  margin: 30px 0;
+  }

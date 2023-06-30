@@ -138,10 +138,24 @@
     }
     .info .bloco-01{
         width: 100%;
-        border-radius: 40px;
+        border-radius: 40px 40px 0 0;
+        
     }
     .info .bloco-02{
         width: 100%;
-        border-radius: 40px;
+        border-radius:  0 0 40px 40px;
+        background-size: 100% 100%;
+        height: 200px;
+        
     }
+
+    .info-02,
+    .info-04{
+        flex-direction: column-reverse;
+    }
+
+    .h-3{
+        margin-top: 50px;
+    }
+    
 }

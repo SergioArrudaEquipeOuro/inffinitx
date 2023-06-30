@@ -56,5 +56,8 @@ export class ForexComponent implements OnInit {
   }
 
   
+  goToCadastroPage() {
+    window.location.href = 'https://inffinitex.com/cadastro';
+  }
   
 }

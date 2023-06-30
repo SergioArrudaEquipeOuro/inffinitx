@@ -54,6 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .img-plano{
     height: 300px;
@@ -78,12 +79,13 @@
 
 .corpo{
     background-color: #353858;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0;
     min-height: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 30px 0;
+    flex-wrap: wrap;
 }
 
 .bloco-01,
@@ -94,6 +96,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .verificar{
     color: #87d414;
     font-size: 30px;
@@ -122,7 +125,6 @@
 
 
 
-
 @media screen and (max-width: 700px) {
     .corpo{
         flex-direction: column;
@@ -133,3 +135,6 @@
         margin-top: 20px;
     }
 }
+
+
+

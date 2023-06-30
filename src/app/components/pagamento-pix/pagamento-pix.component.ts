@@ -21,7 +21,7 @@ export class PagamentoPixComponent {
   }
 
   copy() {
-    this.clipboard.copy('48.549.926/0001-67');
+    this.clipboard.copy('46.731.447/0001-31');
     alert('Copiado para a área de transferência!')
   }
 

@@ -51,6 +51,11 @@ import { ComoFuncionaComponent } from './pages/como-funciona/como-funciona.compo
 import { CursoForexComponent } from './components/curso-forex/curso-forex.component';
 import { SimulacaoComponent } from './components/simulacao/simulacao.component';
 import { ForexComponent } from './pages/forex/forex.component';
+import { AcoesComponent } from './pages/acoes/acoes.component';
+import { IndicesComponent } from './pages/indices/indices.component';
+import { CommoditiesComponent } from './pages/commodities/commodities.component';
+import { PlanoPromoPagamentoComponent } from './pages/plano-promo-pagamento/plano-promo-pagamento.component';
+import { CalculadoraCotacaoComponent } from './components/calculadora-cotacao/calculadora-cotacao.component';
 
 
 
@@ -79,9 +84,9 @@ const routes: Routes = [
   { path: 'fly', component: GraficoFlyComponent },//Teste de component
   
   { path: 'simulacao', component: SimulacaoComponent },//Teste de component
+  { path: 'cotacao', component: CalculadoraCotacaoComponent },//Teste de component
 
 
-  { path: 'https://www.inffinitx.com/contas', component: PlanosComponent },//Teste de component
 
 
   { path: '', component: HomeComponent },
@@ -104,7 +109,10 @@ const routes: Routes = [
   { path: 'quem-somos', component: QuemSomosComponent },
   { path: 'como-funciona', component: ComoFuncionaComponent },
   { path: 'forex', component: ForexComponent },
-  
+  { path: 'acoes', component: AcoesComponent },
+  { path: 'indices', component: IndicesComponent },
+  { path: 'commodities', component: CommoditiesComponent },
+  { path: 'plano-promo', component: PlanoPromoPagamentoComponent },
 
 
 
@@ -162,6 +170,11 @@ const routes: Routes = [
     CursoForexComponent,
     SimulacaoComponent,
     ForexComponent,
+    AcoesComponent,
+    IndicesComponent,
+    CommoditiesComponent,
+    PlanoPromoPagamentoComponent,
+    CalculadoraCotacaoComponent,
   ],
   imports: [
     BrowserModule,

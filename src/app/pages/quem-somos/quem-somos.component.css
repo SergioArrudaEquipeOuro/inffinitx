@@ -156,11 +156,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .corpo-03 .info{
     border:8px solid #fbfbfb;
-    max-width: 350px;
-    margin: 30px;
+    max-width: 400px;
+    min-width: 350px;
+    margin: 10px;
     border-radius: 40px;
     padding: 40px 15px;
 }

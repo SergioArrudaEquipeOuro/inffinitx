@@ -12,6 +12,7 @@ export class SimulacaoComponent {
   rendimentoSemanal: number = 0;
   rendimentoMensal: number = 0;
   periodoSelecionado: string = 'semana';
+  metodoInvestimento:string = 'conservador'
   formatoMoeda: any = { style: 'currency', currency: 'USD' };
   tabelaRendimento: any[] = [];
   mostrarGrafico: boolean = false;
@@ -27,6 +28,7 @@ export class SimulacaoComponent {
   valor1:number = this.valorInicial;
   valor2: number = this.valorInicial;
   valor3: number = this.valor02;
+  
 
   calcularRendimento(): void {
     this.tabelaRendimento = [];
@@ -38,8 +40,20 @@ export class SimulacaoComponent {
       let diasPorSemana = 7;
       let semanas = 1;
       let ultimoDiaMes = 30; // Último dia do mês
+      let metodo = 0
+
+      if(this.metodoInvestimento === 'conservador'){
+        metodo = 0.005
+      }else if(this.metodoInvestimento === 'moderado'){
+        metodo = 0.010
+      }else if(this.metodoInvestimento === 'agressivo'){
+        metodo = 0.011
+      }
+
+
+
       for (let dia = 1; dia <= diasPeriodo; dia++) {
-        this.rendimentoDiario = valorTotal * 0.005; // 0.5% de rendimento diário
+        this.rendimentoDiario = valorTotal * metodo; // 0.5% de rendimento diário
         this.rendimentoDiarioPolpanca = valorTotalPolpanca * 0.0002; // 0.2% de rendimento diário na poupança
         this.rendimentoDiarioSelic = valorTotalSelic * 0.0004; // 0.04% de rendimento diário na SELIC
         valorTotal += this.rendimentoDiario;

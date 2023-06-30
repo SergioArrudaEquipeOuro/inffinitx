@@ -19,6 +19,14 @@
         <option value="ano">Ano</option>
       </select>
     </div>
+    <div class="input-group">
+      <label for="periodo">Perfil:</label>
+      <select id="periodo" [(ngModel)]="metodoInvestimento" (change)="atualizarPeriodo()">
+        <option value="conservador">Conservador</option>
+        <option value="moderado">Moderado</option>
+        <option value="agressivo">Agressivo</option>
+      </select>
+    </div>
   </div>
 
   <button (click)="calcularRendimento()">Calcular</button>

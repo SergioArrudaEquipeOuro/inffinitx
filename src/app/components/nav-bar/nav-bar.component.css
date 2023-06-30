@@ -7,11 +7,13 @@
   .submenu {
       display: none;
       position: absolute;
-      top: 45px; /* Posiciona o submenu abaixo do nav-link */
+      /* top: 50px;  */
       z-index: 999; /* Define uma ordem de sobreposição alta para o submenu */
-      background-color: #e8e8e8;
+      background-color: rgba(255, 255, 255, 0.85);
+
       border-radius: 15px;
-      padding: 20px;
+      padding: 0;
+      
       min-width: 250px;
     }
     .navbar-nav{
@@ -72,15 +74,21 @@
     a {
       text-decoration: none;
       font-weight: bolder;
-      padding: 10px 0;
+      padding: 30px 10px;
     }
     
     .submenu li {
       margin: 15px 0;
+      
     }
-    
+    .submenu li a{
+      color: #2f2f2f;
+      font-weight: bolder;
+      font-size: 22px;
+      padding: 10px;
+    }
     .submenu li a:hover {
-      color: #000000;
+      color: #382abb;
     }
     
     .btn-cadastrar {
@@ -143,7 +151,7 @@
           padding: 0 15px;
           margin: 20px 0;
           max-width: 49%;
-          
+          height: 100%;
       }
       .navbar-toggler{
           margin: 0 10px;

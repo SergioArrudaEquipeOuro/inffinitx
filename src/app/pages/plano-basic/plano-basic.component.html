@@ -9,7 +9,7 @@
         <h2 class="valor" >U$: 100,00</h2>
     </div>
     <div class="corpo">
-        <div class="bloco-01">
+        <div class="bloco-01" id="b1">
             <div class="title">
                 <h3>Sobre o curso:</h3>
             </div>
@@ -23,6 +23,8 @@
             </div>
         </div>
         <div class="bloco-02">
+                <app-calculadora-cotacao [valorCurso]='100'></app-calculadora-cotacao>
+            
             <div class="title">
                 <h3>Formas de pagamentos</h3>
             </div>
@@ -36,4 +38,5 @@
         </div>
     </div>
 </div>
+
 <app-footer></app-footer>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-grafico-fly',
@@ -14,12 +14,15 @@ export class GraficoFlyComponent {
   volume24h: string = '0000';
   aaveData: any;
 
+  
+
+
   ngOnInit(): void {
     this.fetchAaveData();
   }
 
   fetchAaveData(): void {
-    fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=aave')
+    fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=litecoin')
       .then(response => response.json())
       .then(data => {
         this.aaveData = data[0];

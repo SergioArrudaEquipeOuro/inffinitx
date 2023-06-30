@@ -31,7 +31,9 @@
     background-image: url("../../../assets/media/plataforma-corpo-02-img3.png");
     width: 50%;
     min-height: 300px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .texto-p{
     display: flex;
@@ -73,9 +75,10 @@
 }
 .c3b1{
     background-image: url('../../../assets/media/plataforma-corpo-03-img1.png');
-    min-height: 300px;
+    min-height: 500px;
     width: 50%;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
 }
 .c3b2{
@@ -103,8 +106,9 @@
 .c4b2{
     width: 50%;
     background-image: url('../../../assets/media/plataforma-corpo-04-img1.png');
-    background-size: cover;
-    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .btn-c4{
     color: white;
@@ -146,15 +150,17 @@
     }
     .c2b2{
         width: 100%;
-        background-size: cover;
+        background-size: contain;
         padding: 0 5px ;
     }
 
     .corpo-03{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .c3b1, .c3b2{
         width: 100%;
+        background-size: contain;
+        background-position: center center;
     }
     .corpo-04{
         flex-direction: column;

@@ -219,6 +219,27 @@
   background-position: center center;
   margin-top: 100px;
 }
+.btns{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-app{
+  height: 70px;
+  width: 200px;
+  margin: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  margin: 20px 50px;
+}
+.playstore{
+  background-image: url('../../../assets/media/playstore.png');
+}
+.appstore{
+  background-image: url('../../../assets/media/appstore.png');
+}
 
 
 .icon{

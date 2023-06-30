@@ -15,23 +15,27 @@
 .bloco-02 .bloco{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    
+    height: 400px;
 }
+.bloco-02 .bloco{
 
+}
 .bloco-02 .bloco .img{
     height: 150px;
     width: 150px;
 }
 .bloco-02{
     display: flex;
-    padding: 50px 0;
+    padding: 50px 30px;
     justify-content: space-around;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 .bloco-02 .bloco{
-    width: 300px;
+    width: 280px;
+    margin: 50px 20px;
 }
 
 

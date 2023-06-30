@@ -11,7 +11,7 @@
 }
 .title{
     font-size: 40px;
-    color: #474747;
+    color: #345D9D;
 }
 .rodape{
     color: #ffffff;
@@ -34,7 +34,7 @@ body {
 }
 .info p{
   font-weight: bold;
-  color: #6526e3;
+  color: #345D9D;
 }
 .container {
   display: flex;
@@ -86,7 +86,7 @@ figure{
 }
 
 .porcentagem{
-  color: #6526e3;
+  color: #345D9D;
   padding: 10px;
   font-weight: bolder;
 }
@@ -97,7 +97,7 @@ figure{
 }
 
 .html + svg .outer {
-  stroke: #6526e3;
+  stroke: #345D9D;
 }
 
 .css {
